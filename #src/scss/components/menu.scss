@@ -42,7 +42,9 @@
 .menu__link {
   display: block;
   font-size: 20px;
-  color: $c_1;
+  font-family: 'PTSans', sans-serif;
+
+  color: #0d0d0d;
 
   @media (min-width:$md2+px) {
     &:hover {

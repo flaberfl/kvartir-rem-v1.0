@@ -43,6 +43,7 @@ body {
   background: #cfd8dc;
   color: #000;
   font-size: 18px;
+  // font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   &._lock {
     overflow: hidden;
@@ -69,19 +70,6 @@ body {
   max-width: $maxWidthContainer + px;
   margin: 0 auto;
   padding: 0px 15px;
-
-  // @media (max-width: $md1+px) {
-  // 	max-width: 970px;
-  // }
-
-  // @media (max-width: $md2+px) {
-  // 	max-width: 750px;
-  // }
-
-  // @media (max-width: $md3+px) {
-  // 	max-width: none;
-  // 	padding: 0 10px;
-  // }
 }
 
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================

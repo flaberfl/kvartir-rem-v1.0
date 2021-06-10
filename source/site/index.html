@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Главная | Качественный ремонт</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Качественне ремонт под ключ в Москве по самой выгодной цене">
+    <meta name="author" content="Landistore Team">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<!-- Данный шаблон был приобретён на сайте Landistore.com (с) Все права защищены -->
+<header class="header">
+    <div class="header__top">
+        <div class="container">
+            <div class="header__logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <a href="#popup-phone" class="btn popup">Заказать звонок</a>
+            <div class="header__phone">
+                <a href="tel:+89999999999"><i></i>
+                    <span class="r_phone">8 (999) 999-99-99</span>
+                </a>
+            </div>
+            <div class="header__mail">
+                <i></i>adminemail@mail.com
+            </div>
+        </div>
+    </div>
+    <nav class="header__nav">
+        <div class="container">
+            <div class="btn-wrap">
+                <div class="logo-mobile">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <a href="#" class="btn-menu-toggle">
+                    <span class="i i-1"></span>
+                    <span class="i i-2"></span>
+                    <span class="i i-3"></span>
+                </a>
+            </div>
+            <ul class="nav-list">
+                <li class="nav__item"><a href="#action">Рассчитать смету</a></li>
+                <li class="nav__item"><a href="#services">Наши услуги</a></li>
+                <li class="nav__item"><a href="#works-gallery">Галерея работ</a></li>
+                <li class="nav__item"><a href="#reviews">Отзывы о компании</a></li>
+                <li class="nav__item"><a href="#contacts">Свяжитесь с нами</a></li>
+                <li>
+                    <a href="#popup-phone" class="btn popup">Заказать звонок</a>
+                    <div class="header__phone">
+                        <a href="tel:+89999999999"><i></i>
+                            <span class="r_phone">8 (999) 999-99-99</span>
+                        </a>
+                    </div>
+                    <div class="header__mail">
+                        <i></i>email@mail.ru
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main class="main main--homepage">
+    <section class="promo section" id="action">
+        <div class="container">
+            <h1 class="promo__title">Качественный ремонт<br>по выгодной цене в Москве</h1>
+            <form method="post" action="mail.php" class="form promo-form ajax_form">
+                <div class="promo__sub-title">Минимальные сроки от 14 дней.</div>
+                <div class="white-bg form-section">
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="promo-box">
+                            <div class="form-sub-title">Расчет ремонта</div>
+                            <div class="main-radiobox">
+                                <input type="radio" id="build-type-1" name="build-type" value="Косметический" checked>
+                                <label for="build-type-1">Косметический (1700 руб./м²)</label>
+                            </div>
+                            <div class="main-radiobox">
+                                <input type="radio" id="build-type-2" name="build-type" value="Капитальный">
+                                <label for="build-type-2">Капитальный (3500 руб./м²)</label>
+                            </div>
+                            <div class="main-radiobox">
+                                <input type="radio" id="build-type-3" name="build-type" value="Дизайнерский">
+                                <label for="build-type-3">Дизайнерский (4700 руб./м²)</label>
+                            </div>
+                            <div class="main-radiobox">
+                                <input type="radio" id="build-type-4" name="build-type" value="Отделка">
+                                <label for="build-type-4">Отделка помещения (1300 руб./м²)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-8">
+                        <div class="promo-box">
+                            <div class="row">
+                                <div class="col-sm-4 col-xs-12">
+                                    <div class="form-sub-title">Площадь квартиры м<sup>2</sup>:</div>
+                                    <div class="number-group">
+                                        <button type="button" class="btn btn-number left" data-type="minus" data-field="house-place">-</button>
+                                        <input type="text" name="house-place" class="form-control input-number" value="10" min="1" max="100">
+                                        <button type="button" class="btn btn-number right" data-type="plus" data-field="house-place">+</button>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-xs-12">
+                                    <div class="form-sub-title">Количество комнат:</div>
+                                    <div class="number-group">
+                                        <button type="button" class="btn btn-number left" data-type="minus" data-field="house-room">-</button>
+                                        <input type="text" name="house-room" class="form-control input-number" value="2" min="1" max="100">
+                                        <button type="button" class="btn btn-number right" data-type="plus" data-field="house-room">+</button>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-xs-12">
+                                    <div class="form-sub-title">Количество этажей:</div>
+                                    <div class="number-group">
+                                        <button type="button" class="btn btn-number left" data-type="minus" data-field="house-floor">-</button>
+                                        <input type="text" name="house-floor" class="form-control input-number" value="1" min="1" max="4">
+                                        <button type="button" class="btn btn-number right" data-type="plus" data-field="house-floor">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="form-sub-title">Как к вам обращаться?</div>
+                                    <input type="text" name="name" placeholder="Введите имя">
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="form-sub-title">Телефон для связи:</div>
+                                    <input type="text" name="phone" placeholder="Телефон">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promo-bottom">
+                        <input name="formData" type="hidden" value="Калькулятор">
+                        <button class="btn" type="submit" name="submit">Получить смету <span>бесплатно</span></button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </section>
+    <div class="main__service section" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 tac">
+                    <div class="s__title">
+                        Наши <span class="blue">услуги</span></div>
+                </div>
+            </div>
+            <ul class="services-list">
+                <li class="item-services-list">
+                    <div class="col-xs-12 col-md-5 p0">
+                        <div class="img" style="background-image:url(img/homepage/i-serv-1.jpg)"></div>
+                    </div>
+                    <div class="col-xs-12 col-md-7 p0">
+                        <div class="desc">
+                            <div class="title">Ремонт квартир</div>
+                            <ul class="list-mark">
+                                <li>Устройство наливных полов</li>
+                                <li>Электромонтажные работы</li>
+                                <li>Оклейка стен обоями</li>
+                                <li>Монтаж входных и межкомнатных дверей</li>
+                                <li>Укладка ламината и линолеума</li>
+                                <li>Монтаж потолков из гипсокартона</li>
+                                <li>Заливка полимерных полов</li>
+                                <li>Укладка керамической плитки</li>
+                                <li>Штукатурка стен</li>
+                                <li>Дизайн-проект и 3D-визуализция</li>
+                            </ul>
+                            <a href="#popup-phone" class="more popup">Заказать замер бесплатно</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-services-list">
+                    <div class="col-xs-12 col-md-5 p0">
+                        <div class="img" style="background-image:url(img/homepage/i-serv-2.jpg)"></div>
+                    </div>
+                    <div class="col-xs-12 col-md-7 p0">
+                        <div class="desc">
+                            <div class="title">Ремонт домов и коттеджей</div>
+                            <ul class="list-mark">
+                                <li>Отделка фасада дома</li>
+                                <li>Устройство наливных полов</li>
+                                <li>Электромонтажные работы</li>
+                                <li>Монтаж многоуровневых потолков</li>
+                                <li>Монтаж входных и межкомнатных дверей</li>
+                                <li>Укладка ламината на пол</li>
+                                <li>Заливка полимерных полов</li>
+                                <li>Оклейка стен обоями</li>
+                                <li>Укладка керамической плитки</li>
+                                <li>Утепление стен и фасада дома</li>
+                            </ul>
+                            <a href="#popup-phone" class="more popup">Заказать замер бесплатно</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-services-list">
+                    <div class="col-xs-12 col-md-5 p0">
+                        <div class="img" style="background-image:url(img/homepage/i-serv-3.jpg)"></div>
+                    </div>
+                    <div class="col-xs-12 col-md-7 p0">
+                        <div class="desc">
+                            <div class="title">Ремонт офисов</div>
+                            <ul class="list-mark">
+                                <li>Дизайн проект и 3D визуализация</li>
+                                <li>Нанесение декоративной штукатурки</li>
+                                <li>Монтаж потолков из ГКЛ и светильников</li>
+                                <li>Обшивка стен панелями</li>
+                                <li>Оштукатуривание стен</li>
+                                <li>Монтаж потолков Armstrong</li>
+                                <li>Монтаж перегородок из гкл</li>
+                                <li>Укладка плитки на пол</li>
+                                <li>Укладка ламината</li>
+                                <li>Укладка паркета</li>
+                            </ul>
+                            <a href="#popup-phone" class="more popup">Заказать замер бесплатно</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-services-list">
+                    <div class="col-xs-12 col-md-5 p0">
+                        <div class="img" style="background-image:url(img/homepage/i-serv-4.jpg)"></div>
+                    </div>
+                    <div class="col-xs-12 col-md-7 p0">
+                        <div class="desc">
+                            <div class="title">Ремонт ванных комнат</div>
+                            <ul class="list-mark">
+                                <li>Укладка керамической плитки</li>
+                                <li>Установка душевых кабин</li>
+                                <li>Установка сантехники</li>
+                                <li>Электромонтажные работы</li>
+                                <li>Установка двери в ванную</li>
+                                <li>Обшивка пластиковыми панелями</li>
+                                <li>Монтаж светильников</li>
+                                <li>Установка ванн</li>
+                                <li>Монтаж труб</li>
+                                <li>Гидроизоляция помещения</li>
+                            </ul>
+                            <a href="#popup-phone" class="more popup">Заказать замер бесплатно</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-services-list">
+                    <div class="col-xs-12 col-md-5 p0">
+                        <div class="img" style="background-image:url(img/homepage/i-serv-5.jpg)"></div>
+                    </div>
+                    <div class="col-xs-12 col-md-7 p0">
+                        <div class="desc">
+                            <div class="title">Капитальный ремонт</div>
+                            <ul class="list-mark">
+                                <li>Кровля</li>
+                                <li>Фасад</li>
+                                <li>Инженерные системы</li>
+                                <li>Места общего пользования</li>
+                                <li>Придомные участки</li>
+                                <li>Постоянный контроль</li>
+                                <li>Соответствие стандартам</li>
+                                <li>Положительные отзывы</li>
+                                <li>Официальность</li>
+                                <li>Гарантия</li>
+                            </ul>
+
+                            <a href="#popup-phone" class="more popup">Заказать замер бесплатно</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-services-list">
+                    <div class="col-xs-12 col-md-5 p0">
+                        <div class="img" style="background-image:url(img/homepage/i-serv-6.jpg)"></div>
+                    </div>
+                    <div class="col-xs-12 col-md-7 p0">
+                        <div class="desc">
+                            <div class="title">Внутренняя отделка</div>
+                            <ul class="list-mark">
+                                <li>Пластиковые и деревянные панели</li>
+                                <li>Кафель и плитка</li>
+                                <li>Лакокрасочные покрытия</li>
+                                <li>Каменные плиты</li>
+                                <li>Обои и многое другое</li>
+                                <li>Привлекательность</li>
+                                <li>Практичность</li>
+                                <li>Устойчивость</li>
+                                <li>Экологическая безопасность</li>
+                                <li>Гарантии</li>
+                            </ul>
+
+                            <a href="#popup-phone" class="more popup">Заказать замер бесплатно</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="tac">
+                <div class="s__title">
+                    Наши <span class="blue">преимущества</span>
+                </div>
+            </div>
+            <ul class="benefits-list">
+                <li class="benefits__item col-xs-12 col-sm-12 col-md-6 col-lg-3 active" data-item-id="1">
+                    <div class="item__img"><img src="img/benefit-1.png" alt=""></div>
+                    <div class="item__title">Скидки
+                        <br> на материалы</div>
+                    <div class="item__desc">
+                        Экономия на материалах – работая с нами, Вы экономите до 25% на строительных материалах, которые мы закупаем у крупнейших поставщиков со скидкой.
+                    </div>
+                </li>
+                <li class="benefits__item col-xs-12 col-sm-12 col-md-6 col-lg-3" data-item-id="2">
+                    <div class="item__img"><img src="img/benefit-2.png" alt=""></div>
+                    <div class="item__title">Гарантия 7 лет</div>
+                    <div class="item__desc">
+                        Гарантия 7 лет – большой опыт и очень внимательное отношение к работе наших мастеров определяет отличный результат, и мы даем гарантию на все виды работ – 7 лет!
+                    </div>
+                </li>
+                <li class="benefits__item col-xs-12 col-sm-12 col-md-6 col-lg-3" data-item-id="3">
+                    <div class="item__img"><img src="img/benefit-3.png" alt=""></div>
+                    <div class="item__title">Строгий контроль</div>
+                    <div class="item__desc">
+                        Строгий контроль – все работы специалистов выполняются под пристальным контролем опытнейших прорабов.
+                    </div>
+                </li>
+                <li class="benefits__item col-xs-12 col-sm-12 col-md-6 col-lg-3" data-item-id="4">
+                    <div class="item__img"><img src="img/benefit-4.png" alt=""></div>
+                    <div class="item__title">После нас
+                        <br> чисто</div>
+                    <div class="item__desc">
+                        После нас чисто – вывозим весь строительный мусор самостоятельно и оставляем только идеальный ремонт.
+                    </div>
+                </li>
+            </ul>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="benefits__tab-desc active" data-item-id="1">
+                        Экономия на материалах – работая с нами. Вы экономите до 25% на строительных материалах, которые мы закупаем у крупнейших поставщиках качественных материалах со скидкой.
+                    </div>
+                    <div class="benefits__tab-desc" data-item-id="2">
+                        Большой опыт в области строительства и отделки, а так же трепетное отношение к работе наших мастеров определяет отличный результат. Благодаря этому мы с увереностью даем своих клиентам гарантию на все виды работ - 7 лет!
+                    </div>
+                    <div class="benefits__tab-desc" data-item-id="3">
+                        Строгий контроль – все работы специалистов выполняются под пристальным контролем опытнейших прорабов.
+                    </div>
+                    <div class="benefits__tab-desc" data-item-id="4">
+                        После нас чисто – вывозим весь строительный мусор самостоятельно и оставляем только идеальный ремонт.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="work-plane section" id="work-plane">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 tac">
+                    <div class="s__title">Как мы <span>работаем</span></div>
+                </div>
+            </div>
+            <div class="work-plane-list">
+                <li class="work-plane__item">
+                    <div class="item__num">1</div>
+                    <div class="item__desc">Обработка заявки на услуги от клиента</div>
+                </li>
+                <li class="work-plane__item">
+                    <div class="item__num">2</div>
+                    <div class="item__desc">Выезд замерщика на место для оценки сложности и объема работ</div>
+                </li>
+                <li class="work-plane__item">
+                    <div class="item__num">3</div>
+                    <div class="item__desc">Составление сметы и списка необходимых материалов</div>
+                </li>
+                <li class="work-plane__item">
+                    <div class="item__num">4</div>
+                    <div class="item__desc">Заключение договора на работы</div>
+                </li>
+                <li class="work-plane__item">
+                    <div class="item__num">5</div>
+                    <div class="item__desc">Выполнение всех отделочно-ремонтных работ</div>
+                </li>
+                <li class="work-plane__item">
+                    <div class="item__num">6</div>
+                    <div class="item__desc">Сдача объекта клиенту</div>
+                </li>
+            </div>
+        </div>
+    </section>
+    <section class="works-gallery section" id="works-gallery">
+        <div class="container cotainer-fluid">
+            <div class="row">
+                <div class="col-xs-12 tac">
+                    <div class="s__title">Наши <span class="blue">работы</span></div>
+                </div>
+            </div>
+            <div class="gallery sl-gallery js-gallery">
+                <a class="gallery__item" href="img/service/1.jpg">
+                    <div class="content-wrap" style="background-image:url(img/service/1.jpg)"></div>
+                </a>
+                <a class="gallery__item" href="img/service/2.jpg">
+                    <div class="content-wrap" style="background-image:url(img/service/2.jpg)"></div>
+                </a>
+                <a class="gallery__item" href="img/service/3.jpg">
+                    <div class="content-wrap" style="background-image:url(img/service/3.jpg)"></div>
+                </a>
+                <a class="gallery__item" href="img/service/4.jpg">
+                    <div class="content-wrap" style="background-image:url(img/service/4.jpg)"></div>
+                </a>
+                <a class="gallery__item" href="img/service/5.jpg">
+                    <div class="content-wrap" style="background-image:url(img/service/5.jpg)"></div>
+                </a>
+                <a class="gallery__item" href="img/service/6.jpg">
+                    <div class="content-wrap" style="background-image:url(img/service/6.jpg)"></div>
+                </a>
+                <a class="gallery__item" href="img/service/7.jpg">
+                    <div class="content-wrap" style="background-image:url(img/service/7.jpg)"></div>
+                </a>
+                <a class="gallery__item" href="img/service/8.jpg">
+                    <div class="content-wrap" style="background-image:url(img/service/8.jpg)"></div>
+                </a>
+                <a class="gallery__item" href="img/service/9.jpg">
+                    <div class="content-wrap" style="background-image:url(img/service/9.jpg)"></div>
+                </a>
+                <a class="gallery__item" href="img/service/10.jpg">
+                    <div class="content-wrap" style="background-image:url(img/service/10.jpg)"></div>
+                </a>
+                <a class="gallery__item" href="img/service/11.jpg">
+                    <div class="content-wrap" style="background-image:url(img/service/11.jpg)"></div>
+                </a>
+                <a class="gallery__item" href="img/service/12.jpg">
+                    <div class="content-wrap" style="background-image:url(img/service/12.jpg)"></div>
+                </a>
+                <a class="gallery__item" href="img/service/13.jpg">
+                    <div class="content-wrap" style="background-image:url(img/service/13.jpg)"></div>
+                </a>
+                <a class="gallery__item" href="img/service/14.jpg">
+                    <div class="content-wrap" style="background-image:url(img/service/14.jpg)"></div>
+                </a>
+                <a class="gallery__item" href="img/service/15.jpg">
+                    <div class="content-wrap" style="background-image:url(img/service/15.jpg)"></div>
+                </a>
+                <a class="gallery__item" href="img/service/16.jpg">
+                    <div class="content-wrap" style="background-image:url(img/service/16.jpg)"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="reviews section" id="reviews">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="tac">
+                        <div class="s__title">Клиенты <span class="blue">пишут о нас</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sl-review">
+                <div class="review__item">
+                    <img src="img/review/avatar.png" alt="">
+                    <div class="item__title">Светлана Разина</div>
+                    <div class="item__desc">Купила квартиру в новостройке, и сразу договорилась о ремонте «под ключ» с компанией «ТК-Строй» (друзья посоветовали). Очень уже хотелось побыстрее въехать в собственное жилище! Срокам в 7 дней верила не очень, честно говоря… Но мастера меня приятно удивили – действительно, пригласили меня на 7ой день! Ещё даже не всем в доме успели ключи от квартир отдать, а у меня уже ремонт готов – потрясающе!!! И чистоту оставили после себя! Вот молодцы! И обои мне поклеили, и плитку положили, и ламинат, потолки заказывала натяжные.</div>
+                </div>
+                <div class="review__item">
+                    <img src="img/review/avatar2.png" alt="">
+                    <div class="item__title">Ирина Васильева</div>
+                    <div class="item__desc">Наконец-то дошли руки до ремонта ванной комнаты. Плитка здесь ещё с советских времен была. Работы много, и не хотелось развозить это удовольствие на недели и месяцы. Обратились в «ТК-Строй», тут пообещали за неделю управиться. Помогли нам рассчитать необходимое количество кафеля; приступили к работе сразу, как только все материалы были готовы. Работали двое мастеров, наши желания по дизайну учли, всё красиво получилось. Спасибо! Никак не нарадуемся на новую ванную!</div>
+                </div>
+                <div class="review__item">
+                    <img src="img/review/avatar3.jpg" alt="">
+                    <div class="item__title">Владимир Ковешников</div>
+                    <div class="item__desc">Работаю очень много, с связи с чем дом строил довольно долго, наконец, достроил, надоело ждать новоселья, решил заказать ремонт сразу всего дома в проверенной компании. Поспрашивал номера телефонов у коллег, позвонил в «ТК-Строй». Сроки обговорили, договор заключили, стройматериалы закупили, работа пошла активно, заезжал только вечером узнать, как дела, иногда не каждый день мог заскочить. Но ребята всё сделали правильно, ошибок не допустили, всю проводку проложили там, где надо, заземлили грамотно, сантехнику установили продуманно, сливы работают отлично, обои, плитка – без нареканий. Вот уже месяц живу в своём доме – уютно, приятно, хорошо! Теперь уже и сам могу рекомендовать Ваши услуги.</div>
+                </div>
+            </div>
+            <div class="btn-wrap tac">
+                <a href="#popup-review" class="popup btn btn-review">Оставить отзыв</a>
+            </div>
+        </div>
+    </section>
+    <section class="order section" id="contacts">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-7">
+                    <form method="post" action="mail.php" class="form form-order ajax_form">
+                        <h2>ОСТАВЬТЕ ЗАЯВКУ</h2>
+                        <div class="after-h2">И получите экспресс-оценку конечной стоимости ремонта вашего помещения</div>
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <input type="text" name="name" placeholder="Имя" required="">
+                                <input type="text" name="phone" placeholder="Ваш телефон" required="">
+                            </div>
+                            <div class="col-sm-7">
+                                <textarea name="comment" id="" cols="30" rows="5" placeholder="Задать вопрос"></textarea>
+                            </div>
+                            <div class="col-xs-12">
+                                <input name="formData" type="hidden" value="Заказ экспресс-оценки">
+                                <button type="submit" class="btn" name="submit">Отправить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-5 col-xs-12">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa09bb3efdc0dbcfbf8b9ff9815806c0e1317b4854c71425fff49b808c13c90eb&amp;width=100%25&amp;height=345&amp;lang=ru_UA&amp;scroll=true"></script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-info">
+        <div class="container">
+            <ul class="contacts-list row">
+                <li class="contacts__item col-xs-12 col-sm-6 col-md-4">
+                    <div class="item__img-wrap">
+                        <img src="img/i-1.png" alt="">
+                    </div>
+                    <div class="item__desc">Москва пл. киевского вокзала 2</div>
+                </li>
+                <li class="contacts__item col-xs-12 col-sm-6 col-md-4">
+                    <div class="item__img-wrap">
+                        <img src="img/i-2.png" alt="">
+                    </div>
+                    <div class="item__desc">adminemail@mail.com</div>
+                </li>
+                <li class="contacts__item col-xs-12 col-sm-6 col-md-4">
+                    <div class="item__img-wrap">
+                        <img src="img/i-3.png" alt="">
+                    </div>
+                    <div class="item__desc"><a href="tel:+89999999999"><span class="r_phone">8 (999) 999-99-99</span></a></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="copyright">
+        <div class="container tac">
+            Качественный ремонт по выгодной цене в Москве.
+            <span>© Каталог сайтов <a href="https://landistore.com/">Landistore</a>, 2017</span>
+        </div>
+    </div>
+</main>
+<div id="popup-review" class="mfp-hide popup-form">
+    <div class="header-popup">
+        <h3>Оставьте отзыв</h3>
+        <p>Оставьте свой отзыв о нашей работе и мы обязательно его опубликуем</p>
+    </div>
+    <form method="post" action="mail.php" class="form ajax_form">
+        <input type="text" name="name" placeholder="Имя:">
+        <input type="text" name="phone" placeholder="Телефон:">
+        <textarea name="review" cols="30" rows="3" placeholder="Отзыв:"></textarea>
+        <input name="formData" type="hidden" value="Новый отзыв">
+        <button class="btn" type="submit" name="submit">Отправить</button>
+    </form>
+</div>
+<div id="popup-phone" class="mfp-hide popup-form">
+    <div class="header-popup">
+        <h3>Обратный звонок</h3>
+        <p>Оставьте свои данные и наш менеджер свяжется с вами</p>
+    </div>
+
+    <form method="post" action="mail.php" class="form ajax_form">
+        <input type="text" name="name" placeholder="Имя:" required>
+        <input type="text" name="phone" placeholder="Телефон:" required>
+        <button class="btn" name="submit" type="submit">Отправить</button>
+        <input name="formData" type="hidden" value="Обратный звонок">
+    </form>
+</div>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/magnific-popup.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
+<!-- Данный шаблон был приобретён на сайте Landistore.com (с) Все права защищены -->
+</body>
+
+</html>

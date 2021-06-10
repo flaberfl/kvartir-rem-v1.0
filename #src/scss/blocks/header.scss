@@ -1,12 +1,12 @@
 .header {
-  font-family: 'PTSans', sans-serif;
 
   // .header__top
   &__top {
     padding: 20px 0px;
-    background: url('../../img/header_bg.jpg') no-repeat center center;
+    background-image: url('../../img/header_bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
   }
 
   // .header__contacts
@@ -29,13 +29,16 @@
   &__btn {
     margin: 0px 0px 0px 30px;
 
-    font-family: 'Montserrat';
     font-size: 18px;
-    letter-spacing: -.9px;
   }
 
   // .header__menu
-  &__menu {}
+  &__menu {
+    background: #fff;
+    border-bottom: 4px solid #e9a617;
+    box-shadow: 0 10px 13px 0px rgba(#000, .1);
+    position: relative;
+  }
 }
 
 .phone,

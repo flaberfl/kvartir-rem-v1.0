@@ -22,33 +22,34 @@
 
 
 .menu__list {
-  li {
-    margin: 0px 0px 30px 0px;
+  display: flex;
+  justify-content: space-between;
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+  li {
+    flex: 1 1 auto;
   }
+
 
   @media (min-width:$md3+px) {
     display: flex;
-
-    li {
-      margin: 0px 33px 0px 0px;
-    }
   }
 }
 
 .menu__link {
   display: block;
-  font-size: 20px;
-  font-family: 'PTSans', sans-serif;
+  padding: 20px 0px;
+  text-align: center;
 
+  font-size: 18px;
   color: #0d0d0d;
+
+  transition: all 0.3s ease 0s;
 
   @media (min-width:$md2+px) {
     &:hover {
-      text-decoration: underline;
+      background: #e9a617;
+      color: #fff;
+      // text-decoration: underline;
     }
   }
 

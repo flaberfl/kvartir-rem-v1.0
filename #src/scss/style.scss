@@ -6,9 +6,9 @@
 
 //<Подключаем шрифты>=======================================================================================
 //&display=swap&subset=cyrillic-ext
-// @import "fonts";
-@import url('https://fonts.googleapis.com/css?family=Montserrat:regular,600,700&display=swap&subset=cyrillic-ext');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap&subset=cyrillic-ext');
+@import "fonts";
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:regular,600,700&display=swap&subset=cyrillic-ext');
+// @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap&subset=cyrillic-ext');
 //</Подключаем шрифты>=======================================================================================
 
 //<Иконочные шрифты>==========================================================================================
@@ -16,7 +16,8 @@
 //</Иконочные шрифты>==========================================================================================
 
 //<Шрифт по умолчанию>==========================================================================================
-$fontFamily: "Montserrat";
+$fontFamily:'PTSans',
+sans-serif;
 //</Шрифт по умолчанию>==========================================================================================
 
 //</ШРИФТЫ>=======================================================================================================
@@ -41,9 +42,8 @@ $c_3: #dbb550;
 
 body {
   background: #cfd8dc;
-  color: #000;
+  color: #363636;
   font-size: 18px;
-  // font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   &._lock {
     overflow: hidden;
@@ -87,6 +87,7 @@ body {
 @import "components/spollers";
 @import "components/popup";
 @import "blocks/header";
+@import "blocks/promo";
 @import "layout/footer";
 @import "home";
 @import "components/menu";

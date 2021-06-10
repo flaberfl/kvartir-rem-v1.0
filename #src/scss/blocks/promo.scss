@@ -1,0 +1,24 @@
+.promo {
+  padding: 90px 0px;
+
+  background-image: url('../../img/promo_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  // .promo__container
+  &__container {}
+
+  // .promo__title
+  &__title {
+    margin: 32px 0px 0px 0px;
+
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 2px 4px 20px rgba(#000, .3);
+    margin-bottom: 140px;
+    text-align: center;
+  }
+}

@@ -5,10 +5,21 @@
 //<BUTTONS (a.btn+tab)>====================================================================================================
 .btn {
   display: inline-flex;
-  padding: 0px 0px;
+  padding: 15px 26px;
+  border-radius: 25px;
+
+  background-color: $c_2;
+
+  font-weight: 600;
+  color: #6e551b;
+
+  transition: 0.3s;
 
   @media (min-width: 992px) {
-    &:hover {}
+    &:hover {
+      background: #edaf21;
+      color: #000;
+    }
   }
 
   &._fw {

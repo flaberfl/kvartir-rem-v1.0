@@ -1,0 +1,112 @@
+.header {
+  font-family: 'PTSans', sans-serif;
+
+  // .header__top
+  &__top {
+    padding: 20px 0px;
+    background: url('../../img/header_bg.jpg') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  // .header__contacts
+  .header__contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .header__logo
+  &__logo {}
+
+  // .header__info
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+
+  // .header__btn
+  &__btn {
+    margin: 0px 0px 0px 30px;
+
+    font-family: 'Montserrat';
+    font-size: 18px;
+    letter-spacing: -.9px;
+
+  }
+
+  // .header__menu
+  &__menu {}
+}
+
+.phone,
+.mail {
+  display: block;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 21px;
+    top: 50%;
+    transform: translate(0px, -50%);
+  }
+
+  transition: all 0.3s ease 0s;
+
+  @media (min-width: 992px) {
+    &:hover {
+      text-decoration: underline;
+      color: #000;
+    }
+  }
+}
+
+.mail {
+
+  font-size: 17px;
+  color: #363636;
+
+  &::before {
+    left: -32px;
+    background: url('../../img/i-mail.png') 0 0 no-repeat;
+  }
+}
+
+.phones {
+  margin: 0px 0px 0px 55px;
+}
+
+.phone {
+  font-size: 18px;
+  font-weight: 600;
+  color: #262626;
+
+  &::before {
+    left: -22px;
+    background: url('../../img/i-phone.png') 0 0 no-repeat;
+  }
+
+  &+& {
+    margin-top: 12px;
+  }
+}
+
+.menu {
+
+  // .menu__icon
+  &__icon {}
+
+  // .menu__body
+  &__body {}
+
+  // .menu__list
+  &__list {}
+
+  // .menu__link
+  &__link {}
+}
+
+.icon-menu {}

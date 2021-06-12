@@ -44,17 +44,7 @@
 .phone,
 .mail {
   display: block;
-  position: relative;
-
-  &::before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 24px;
-    height: 21px;
-    top: 50%;
-    transform: translate(0px, -50%);
-  }
+  padding-left: 31px;
 
   transition: all 0.3s ease 0s;
 
@@ -67,13 +57,11 @@
 }
 
 .mail {
-  font-size: 17px;
-  color: #363636;
+  background: url('../../img/i-mail.png') left center no-repeat;
 
-  &::before {
-    left: -32px;
-    background: url('../../img/i-mail.png') 0 0 no-repeat;
-  }
+  font-size: 17px;
+  line-height: 21px;
+  color: #363636;
 }
 
 .phones {
@@ -81,14 +69,11 @@
 }
 
 .phone {
-  font-size: 18px;
-  font-weight: 600;
-  color: #262626;
+  background: url('../../img/i-phone.png') left top no-repeat;
 
-  &::before {
-    left: -22px;
-    background: url('../../img/i-phone.png') 0 0 no-repeat;
-  }
+  font-size: 19px;
+  font-weight: 700;
+  color: #262626;
 
   &+& {
     margin-top: 12px;

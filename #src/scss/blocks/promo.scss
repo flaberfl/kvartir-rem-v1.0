@@ -8,8 +8,14 @@
 
   // .promo__container
   &__container {
+    position: relative;
     display: flex;
     justify-content: flex-end;
+  }
+
+  &__bg-part {
+    // position: absolute;
+    background: url('../../img/pngwing.com.png') center right no-repeat;
   }
 
   // .promo__title
@@ -17,7 +23,8 @@
     margin-bottom: 140px;
     padding: 20px;
 
-    // background-color: rgba(#232323, .1);
+
+    // background-color: rgba(#232323, .04);
     // background-color: rgba(230, 178, 54, 1);
     border-radius: 18px;
 

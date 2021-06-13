@@ -23,9 +23,7 @@
     margin-bottom: 140px;
     padding: 20px;
 
-
     // background-color: rgba(#232323, .04);
-    // background-color: rgba(230, 178, 54, 1);
     border-radius: 18px;
 
     font-size: 52px;
@@ -37,6 +35,14 @@
     text-shadow: 2px 4px 20px rgba(#fff, .5);
     text-align: right;
     // -webkit-text-stroke: 1px rgba(#fff, .1);
+
+    span {
+      padding: 0px 0px 0px 200px;
+      // background-color: rgba(230, 178, 54, .1);
+      // border-radius: 18px;
+      background-color: rgba($c_1, .3);
+    background: url('../../img/pngwing.com.png') center right no-repeat;
+    }
 
   }
 }

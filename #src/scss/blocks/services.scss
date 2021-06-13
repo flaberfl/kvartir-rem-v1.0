@@ -1,0 +1,43 @@
+.services {
+
+  // .services__container
+  &__container {}
+
+  // .services__title
+  &__title {}
+
+  // .services__items
+  &__items {
+    margin: 0px -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  // .services__item
+  &__item {
+    padding: 0px 15px;
+    // display: flex;
+    justify-content: flex-end;
+    flex: 0 1 50%;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid #000;
+
+    &--flat {
+      // background-image: url('../../img/homepage/i-serv-1.jpg');
+    }
+  }
+
+  // .services__item-title
+  &__item-title {}
+
+  // .services__list
+  &__list {}
+
+  // .services__list-item
+  &__list-item {}
+
+  // .services__order
+  &__order {}
+}

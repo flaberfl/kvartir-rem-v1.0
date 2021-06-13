@@ -1,66 +1,82 @@
-//====================================================================================================
-.header__menu {
-  padding: 10px 0;
-  height: 82px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+.header {
 
-  @media (max-width:$md3+px) {
-    height: 50px;
+  // .header__top
+  &__top {
+    padding: 20px 0px;
+    background-image: url('../../img/header_bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  // .header__contacts
+  .header__contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .header__logo
+  &__logo {}
+
+  // .header__info
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+
+  // .header__btn
+  &__btn {
+    margin: 0px 0px 0px 30px;
+
+    font-size: 18px;
+  }
+
+  // .header__menu
+  &__menu {
+    background: #fff;
+    border-bottom: 4px solid #e9a617;
+    box-shadow: 0 10px 13px 0px rgba(#000, .1);
+    position: relative;
   }
 }
 
-//====================================================================================================
+.phone,
+.mail {
+  display: block;
+  padding-left: 31px;
 
-//Burger
-.icon-menu {
-  display: none;
+  transition: all 0.3s ease 0s;
 
-  @media (max-width: $md3+px) {
-    display: block;
-    position: fixed;
-    // position: absolute;
-    // top: 18px;
-    // right: 10px;
-    width: 30px;
-    height: 18px;
-    cursor: pointer;
-    z-index: 200;
-
-    span {
-      transition: all 0.3s ease 0s;
-      top: calc(50% - 1px);
-      left: 0px;
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      background-color: #000;
-
-      &:first-child {
-        top: 0px;
-      }
-
-      &:last-child {
-        top: auto;
-        bottom: 0px;
-      }
+  @media (min-width: 992px) {
+    &:hover {
+      padding: 0px 0px 0px 29px;
+      text-decoration: underline;
+      color: #000;
     }
+  }
+}
 
-    &._active {
-      span {
-        transform: scale(0);
+.mail {
+  background: url('../../img/i-mail.png') left center no-repeat;
 
-        &:first-child {
-          transform: rotate(-45deg);
-          top: calc(50% - 1px);
-        }
+  font-size: 17px;
+  line-height: 21px;
+  color: #363636;
+}
 
-        &:last-child {
-          transform: rotate(45deg);
-          bottom: calc(50% - 1px);
-        }
-      }
-    }
+.phones {
+  margin: 0px 0px 0px 55px;
+}
+
+.phone {
+  background: url('../../img/i-phone.png') left top no-repeat;
+
+  font-size: 19px;
+  font-weight: 700;
+  color: #262626;
+
+  &+& {
+    margin-top: 12px;
   }
 }

@@ -72,6 +72,14 @@ body {
   padding: 0px 15px;
 }
 
+._section {
+  padding: 90px 0px;
+
+  &__top {
+    text-align: center;
+  }
+}
+
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
@@ -84,13 +92,14 @@ body {
 //@import "lightgallery";
 //@import "pagging";
 // @import "tabs";
-@import "components/spollers";
-@import "components/popup";
-@import "blocks/header";
-@import "blocks/promo";
-@import "layout/footer";
-@import "home";
+// @import "components/spollers";
+// @import "components/popup";
+@import "layout/header";
 @import "components/menu";
+@import "blocks/promo";
+@import "blocks/services";
+// @import "home";
+@import "layout/footer";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
 //<ОСНОВНОЙ БЛОК>====================================================================================================

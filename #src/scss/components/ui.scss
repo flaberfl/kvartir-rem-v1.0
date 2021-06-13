@@ -1,4 +1,24 @@
 //<ОСНОВНОЙ БЛОК>====================================================================================================
+.title {
+  display: inline-block;
+  margin-bottom: 64px;
+  padding: 0px 0px 10px;
+
+  border-bottom: 8px solid $c_1;
+
+  font-size: 48px;
+  color: #2d2d2d;
+  text-transform: uppercase;
+
+  &--blue {
+    font-weight: 700;
+    color: $c_1;
+  }
+
+  &--orange {
+    color: #ffd272;
+  }
+}
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 

@@ -8,14 +8,8 @@
 
   // .promo__container
   &__container {
-    position: relative;
     display: flex;
     justify-content: flex-end;
-  }
-
-  &__bg-part {
-    // position: absolute;
-    background: url('../../img/pngwing.com.png') center right no-repeat;
   }
 
   // .promo__title
@@ -35,14 +29,5 @@
     text-shadow: 2px 4px 20px rgba(#fff, .5);
     text-align: right;
     // -webkit-text-stroke: 1px rgba(#fff, .1);
-
-    span {
-      padding: 0px 0px 0px 200px;
-      // background-color: rgba(230, 178, 54, .1);
-      // border-radius: 18px;
-      background-color: rgba($c_1, .3);
-    background: url('../../img/pngwing.com.png') center right no-repeat;
-    }
-
   }
 }

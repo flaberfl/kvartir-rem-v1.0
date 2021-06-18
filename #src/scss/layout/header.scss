@@ -14,10 +14,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width:$md2+px){
+      justify-content: center;
+    }
   }
 
   // .header__logo
-  &__logo {}
+  &__logo {
+
+    @media (max-width:$md2+px) {
+      display: none;
+    }
+  }
 
   // .header__info
   &__info {
@@ -37,7 +46,6 @@
     background: #fff;
     border-bottom: 4px solid #e9a617;
     box-shadow: 0 10px 13px 0px rgba(#000, .1);
-    position: relative;
   }
 }
 
@@ -63,6 +71,8 @@
   font-size: 17px;
   line-height: 21px;
   color: #363636;
+
+  flex: 1 1 auto;
 }
 
 .phones {

@@ -7,6 +7,12 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #fff;
+
+    @media (max-width:$md3+px) {
+      background-image: none !important;
+      height: 66px;
+    }
   }
 
   // .header__contacts
@@ -15,7 +21,7 @@
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width:$md2+px){
+    @media (max-width:$md2+px) {
       justify-content: center;
     }
   }
@@ -39,6 +45,10 @@
     margin: 0px 0px 0px 30px;
 
     font-size: 18px;
+
+    @media (max-width:$md3+px) {
+      display: none;
+    }
   }
 
   // .header__menu
@@ -72,11 +82,19 @@
   line-height: 21px;
   color: #363636;
 
-  flex: 1 1 auto;
+  @media (max-width:$md3+px) {
+    display: none;
+  }
 }
 
 .phones {
   margin: 0px 0px 0px 55px;
+
+  @media (max-width:$md3+px) {
+    margin: 2px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .phone {
@@ -88,5 +106,9 @@
 
   &+& {
     margin-top: 12px;
+
+    @media (max-width:$md3+px) {
+      margin: 0px 0px 0px 30px;
+    }
   }
 }

@@ -1,21 +1,36 @@
 .promo {
-  padding: 90px 0px;
+  padding-top: 90px;
 
   background-image: url('../../img/promo_bg-100.jpg');
   background-repeat: no-repeat;
   background-position: center -160px;
   background-size: cover;
 
+  @media (max-width:$md2+px) {
+    padding-top: 20px;
+  }
+
+  @media (max-width:$md3+px) {
+    padding-top: 200px 0px;
+
+    background-color: #f1bc2c;
+    background-image: none !important;
+  }
+
   // .promo__container
   &__container {
     display: flex;
     justify-content: flex-end;
+
+    @media (max-width:$md3+px) {
+      display: block;
+    }
   }
 
   // .promo__title
   &__title {
     margin-bottom: 200px;
-    padding: 20px;
+    // padding: 20px;
 
     // background-color: rgba(#232323, .04);
     border-radius: 18px;
@@ -29,5 +44,9 @@
     text-shadow: 2px 4px 20px rgba(#000, .2);
     text-align: right;
     -webkit-text-stroke: 1px rgba(#fff, .2);
+
+    @media (max-width:$md3+px) {
+      text-align: center;
+    }
   }
 }

@@ -75,6 +75,10 @@ body {
 ._section {
   padding: 90px 0px;
 
+  @media (max-width:$md2+px){
+    padding: 70px 0px;
+  }
+
   &__top {
     text-align: center;
   }
@@ -86,11 +90,6 @@ body {
   width: 100%;
 
 }
-
-._sticky+.page {
-  padding-top: 120px;
-}
-
 
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
 

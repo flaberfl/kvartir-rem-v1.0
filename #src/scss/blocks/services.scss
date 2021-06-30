@@ -33,10 +33,15 @@
   &__item-title {}
 
   // .services__list
-  &__list {}
+  &__list {
+    padding: 25px 20px 20px;
+  }
 
   // .services__list-item
-  &__list-item {}
+  &__list-item {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
 
   // .services__order
   &__order {}

@@ -1,5 +1,5 @@
 .features {
-  padding: 55px 0px;
+  padding: 55px 0px 121px;
   background: #f3faff;
 
   // .features__items
@@ -46,6 +46,7 @@
         left: 0;
       }
     }
+
     &:nth-child(4) {
       &::before {
         bottom: -34px;
@@ -75,10 +76,14 @@
     line-height: 1.2;
   }
 
-  &__descr {}
+  // .features__descr
+  &__descr {
+    position: relative;
+  }
 
+  // .features__descr-text
   &__descr-text {
-
+    position: absolute;
     line-height: 1.2;
     text-align: center;
   }

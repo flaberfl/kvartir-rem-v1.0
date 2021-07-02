@@ -3,12 +3,27 @@
   display: inline-block;
   margin-bottom: 64px;
   padding: 0px 0px 17px;
-
+  
   border-bottom: 8px solid $c_1;
-
+  
   font-size: 48px;
   color: #2d2d2d;
   text-transform: uppercase;
+  
+  @media (max-width: 1200px){
+    margin-bottom: 60px;
+  }
+  
+  @media (max-width:$md2+px){
+    margin-bottom: 55px;
+    padding: 12px 0px;
+    font-size: 34px;
+  }
+
+  @media (max-width:$md3+px){
+     margin-bottom: 50px;
+     font-size: 25px; 
+  }
 
   &--blue {
     font-weight: 700;

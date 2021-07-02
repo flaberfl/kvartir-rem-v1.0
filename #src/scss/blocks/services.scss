@@ -1,4 +1,6 @@
 .services {
+  padding: 104px 0px;
+  background-color: #eef7fb;
 
   // .services__container
   &__container {}
@@ -8,41 +10,127 @@
 
   // .services__items
   &__items {
-    margin: 0px -15px;
     display: flex;
     flex-wrap: wrap;
+    margin: 0px -15px;
   }
 
+  &__column {
+    flex: 0 1 50%;
+    padding: 0px 15px;
+    
+    @media (max-width: 1200px){
+      flex: 0 1 70%;
+      margin: 0 auto;
+    }
+  }
+  
   // .services__item
   &__item {
-    padding: 0px 15px;
-    // display: flex;
+    display: flex;
     justify-content: flex-end;
-    flex: 0 1 50%;
-
+    margin: 0px 0px 40px 0px;
     background-repeat: no-repeat;
     background-position: center center;
-    border: 1px solid #000;
+    background-size: 1200px 580px;
+    border-radius: 10px;
+    box-shadow: 0 4px 13px -3px rgba(#000, .2);
+    overflow: hidden;
+
+    transition: all 0.6s ease 0s;
+
+    &:hover {
+      background-position: center left;
+      box-shadow: 0 4px 90px -3px rgba(#000, .2);
+
+    }
 
     &--flat {
       background-image: url('../../img/homepage/i-serv-1.jpg');
     }
+
+    &--house {
+      background-image: url('../../img/homepage/i-serv-2.jpg');
+    }
+    &--office {
+      background-image: url('../../img/homepage/i-serv-3.jpg');
+    }
+    &--bathroom {
+      background-image: url('../../img/homepage/i-serv-4.jpg');
+    }
+  }
+
+  &__desc {
+    padding: 25px 20px 20px;
+    background-color: #fff;
+    flex: 0 1 68%;
   }
 
   // .services__item-title
-  &__item-title {}
+  &__item-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #3d92e0;
+  }
 
   // .services__list
   &__list {
-    padding: 25px 20px 20px;
+    padding: 25px 0px 35px;
   }
 
   // .services__list-item
   &__list-item {
-    margin-bottom: 12px;
-    font-size: 16px;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 0px 0px 0px 20px;
+
+    font-size: 17px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      left: 0;
+      width: 16px;
+      height: 16px;
+      background: url('../../img/homepage/list-mark.png') 0 0 no-repeat;
+    }
   }
 
   // .services__order
-  &__order {}
+  &__order {
+    position: relative;
+
+    font-size: 19px;
+    font-weight: 700;
+    color: $c_3;
+    border-bottom: 2px dashed $c_3;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 15px;
+      right: -15px;
+      bottom: 3px;
+      background: url('../../img/homepage/i-more-arrow.png') 0 0 no-repeat;
+      transition: all 0.3s ease 0s;
+    }
+
+    &:hover {
+
+      &::before {
+        right: -23px;
+
+      }
+
+    }
+
+
+  }
 }

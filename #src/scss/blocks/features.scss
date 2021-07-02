@@ -46,6 +46,21 @@
         left: 0;
       }
     }
+    &:nth-child(4) {
+      &::before {
+        bottom: -34px;
+        left: -28px;
+      }
+    }
+
+
+
+    &._active {
+      &::before {
+        display: block;
+      }
+    }
+  }
 
   // .features__item-image
   &__item-image {

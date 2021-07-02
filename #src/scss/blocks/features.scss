@@ -1,0 +1,31 @@
+.features {
+  padding: 55px 0px;
+
+  // .features__list
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-bottom: 4px solid #9fd5f7;
+  }
+
+  // .features__list-item
+  &__list-item {
+    padding: 0px 0px 30px 0px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  // .features__list-image
+  &__list-image {
+    margin-bottom: 13px;
+  }
+
+  // .features__list-title
+  &__list-title {
+    font-weight: 700;
+    color: $c_1;
+    line-height: 1.2;
+  }
+}

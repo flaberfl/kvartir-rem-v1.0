@@ -1,0 +1,22 @@
+.work-plane {
+
+  background-image: url('../../img/work-plane_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  // .work-plane__title
+  &__title {}
+
+  // .work-plane__list
+  &__list {}
+
+  // .work-plane__list-item
+  &__list-item {}
+
+  // .work-plane__num
+  &__num {}
+
+  // .work-plane__text
+  &__text {}
+}

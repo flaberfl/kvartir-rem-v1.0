@@ -76,10 +76,14 @@
 
     @media (max-width:$md3+px) {
       flex: 0 1 100%;
+
+      &:last-child {
+        margin: 0px 0px 0px 0px;
+      }
     }
 
-    @media (max-width:$md4+px){
-       padding: 0; 
+    @media (max-width:$md4+px) {
+      padding: 0;
     }
   }
 

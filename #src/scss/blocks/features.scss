@@ -65,6 +65,13 @@
         }
       }
     }
+
+    @media (max-width:$md2+px) {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      flex: 0 0 50%;
+    }
   }
 
   // .features__item-image

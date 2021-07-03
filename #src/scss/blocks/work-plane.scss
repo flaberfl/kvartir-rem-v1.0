@@ -1,22 +1,108 @@
 .work-plane {
+  padding-bottom: 540px;
 
   background-image: url('../../img/work-plane_bg.jpg');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: bottom center;
   background-size: cover;
 
   // .work-plane__title
-  &__title {}
+  &__title {
+    border-color: #fff;
+  }
 
   // .work-plane__list
-  &__list {}
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   // .work-plane__list-item
-  &__list-item {}
+  &__list-item {
+    position: relative;
+    flex: 0 1 16.6%;
+    text-align: center;
+
+    @media (max-width:$md2+px) {
+      margin: 0px 0px 20px 0px;
+      flex: 1 1 33.3%;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 41px;
+      right: -30px;
+
+      @media (max-width:$md2+px) {
+        display: none;
+      }
+    }
+
+    &:nth-child(1) {
+      &::before {
+        width: 58px;
+        height: 17px;
+        background: url(../img/decor-arrow-1.png) no-repeat center center;
+      }
+    }
+
+    &:nth-child(2) {
+      &::before {
+        width: 65px;
+        height: 25px;
+        background: url(../img/decor-arrow-2.png) no-repeat center center;
+      }
+    }
+
+    &:nth-child(3) {
+      &::before {
+        width: 58px;
+        height: 19px;
+        background: url(../img/decor-arrow-3.png) no-repeat center center;
+      }
+    }
+
+    &:nth-child(4),
+    &:nth-child(5) {
+      &::before {
+        width: 62px;
+        height: 19px;
+        background: url(../img/decor-arrow-4.png) no-repeat center center;
+      }
+    }
+
+    &:nth-child(5) {
+      &::before {
+        background: url(../img/decor-arrow-5.png) no-repeat center center;
+      }
+    }
+  }
 
   // .work-plane__num
-  &__num {}
+  &__num {
+    font-size: 97px;
+    font-weight: 700;
+    line-height: 1.08em;
+    color: #fff;
+
+    @media (max-width:$md2+px) {
+      font-size: 58px;
+      text-shadow: 0 2px 2px rgba(#000, .4);
+    }
+  }
 
   // .work-plane__text
-  &__text {}
+  &__text {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.3;
+    color: #fff;
+
+    @media (max-width:$md2+px) {
+      border-radius: 6px;
+      text-shadow: 0 2px 2px rgba(#000, .4);
+      background: rgba($c_1, .5);
+    }
+  }
 }

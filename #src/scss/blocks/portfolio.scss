@@ -30,10 +30,13 @@
 
   // .portfolio__photo
   &__photo {
+    // padding: 0px 0px 60% 0px;
+    width: 250px;
 
     img {
       min-height: 260px;
       max-width: 100%;
+      // flex: 0 0 200px;
     }
   }
 }

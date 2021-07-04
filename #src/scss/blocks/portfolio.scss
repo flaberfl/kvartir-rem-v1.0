@@ -4,25 +4,32 @@
   &__title {}
 
   // .portfolio__gallery
-  &__gallery {
+  &__items {
     display: flex;
+    flex-wrap: wrap;
     margin: 0px -10px;
   }
 
-  // .portfolio__gallery-item
-  &__gallery-item {
-    // height: 290px;
+  // .portfolio__col
+  &__col {
     flex: 0 1 25%;
-    margin: 0px 0px 20px 0px;
     padding: 0px 10px;
+  }
+
+  // .portfolio__gallery-item
+  &__item {
+    margin: 0px 0px 20px 0px;
+
     border-radius: 10px;
     overflow: hidden;
+  }
+
+  // .portfolio__gallery-photo
+  &__photo {
+    // height: 290px;
 
     img {
       max-width: 100%;
     }
   }
-
-  // .portfolio__gallery-photo
-  &__gallery-photo {}
 }

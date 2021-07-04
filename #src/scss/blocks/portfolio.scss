@@ -1,0 +1,28 @@
+.portfolio {
+
+  // .portfolio__title
+  &__title {}
+
+  // .portfolio__gallery
+  &__gallery {
+    display: flex;
+    margin: 0px -10px;
+  }
+
+  // .portfolio__gallery-item
+  &__gallery-item {
+    // height: 290px;
+    flex: 0 1 25%;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  // .portfolio__gallery-photo
+  &__gallery-photo {}
+}

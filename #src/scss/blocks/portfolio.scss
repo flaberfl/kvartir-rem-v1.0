@@ -1,5 +1,9 @@
 .portfolio {
 
+  // .portfolio__container
+  &__container {}
+
+
   // .portfolio__title
   &__title {}
 
@@ -13,22 +17,22 @@
   // .portfolio__col
   &__col {
     flex: 1 1 25%;
-    padding: 0px 10px;
-    // height: 290px;
+
+    padding: 10px;
+
   }
 
-  // .portfolio__gallery-item
+  // .portfolio__item
   &__item {
-    margin-bottom: 20px;
     border-radius: 10px;
     overflow: hidden;
   }
 
-  // .portfolio__gallery-photo
+  // .portfolio__photo
   &__photo {
-    // height: 290px;
 
     img {
+      min-height: 260px;
       max-width: 100%;
     }
   }

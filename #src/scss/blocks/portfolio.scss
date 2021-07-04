@@ -3,7 +3,6 @@
   // .portfolio__container
   &__container {}
 
-
   // .portfolio__title
   &__title {}
 
@@ -17,26 +16,23 @@
   // .portfolio__col
   &__col {
     flex: 1 1 25%;
-
     padding: 10px;
-
   }
 
   // .portfolio__item
-  &__item {
-    border-radius: 10px;
-    overflow: hidden;
-  }
+  &__item {}
 
   // .portfolio__photo
   &__photo {
-    // padding: 0px 0px 60% 0px;
     width: 250px;
+    display: block;
+
+    border-radius: 10px;
+    overflow: hidden;
 
     img {
       min-height: 260px;
       max-width: 100%;
-      // flex: 0 0 200px;
     }
   }
 }

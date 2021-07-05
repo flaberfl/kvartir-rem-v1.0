@@ -75,10 +75,10 @@ let slider = new Swiper('.portfolio__items', {
 
 	// observer: true,
 	// observeParents: true,
-	slidesPerView: 2,
+	// slidesPerView: 2,
 	// spaceBetween: 0,
-	autoHeight: false,
-	slidePerColumn: 2,
+	// autoHeight: true,
+	// slidePerColumn: 2,
 	speed: 800,
 
 

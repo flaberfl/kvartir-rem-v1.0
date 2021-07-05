@@ -9,31 +9,34 @@
   // .portfolio__gallery
   &__items {
     display: flex;
-    // flex-wrap: wrap;
-    margin: 0px -10px;
+    flex-wrap: wrap;
+    margin: -10px;
   }
 
   // .portfolio__col
   &__col {
     flex: 1 1 25%;
     padding: 10px;
+
+
   }
 
   // .portfolio__item
-  &__item {}
-
-  // .portfolio__photo
-  &__photo {
-    width: 250px;
-    display: block;
-
+  &__item {
     border-radius: 10px;
     overflow: hidden;
 
-    img {
-      min-height: 260px;
-      max-width: 100%;
+  }
 
+  // .portfolio__photo
+  &__photo {
+    width: 270px;
+    // display: block;
+
+
+    img {
+      min-height: 270px;
+      max-width: 100%;
     }
   }
 }

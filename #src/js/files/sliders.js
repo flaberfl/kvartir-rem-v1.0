@@ -73,11 +73,11 @@ let slider = new Swiper('.portfolio__items', {
 
 	// init: false,
 
-	observer: true,
-	observeParents: true,
-	slidesPerView: 4,
-	spaceBetween: 0,
-	autoHeight: true,
+	// observer: true,
+	// observeParents: true,
+	// slidesPerView: 4,
+	// spaceBetween: 0,
+	// autoHeight: true,
 	speed: 800,
 
 

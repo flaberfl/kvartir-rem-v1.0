@@ -63,7 +63,7 @@ function sliders_bild_callback(params) {}
 
 let slider = new Swiper('.portfolio__items', {
 	/*
-	effect: 'fade',
+	// effect: 'fade',
 	autoplay: {
 		delay: 3000,
 		disableOnInteraction: false,
@@ -75,16 +75,16 @@ let slider = new Swiper('.portfolio__items', {
 
 	// observer: true,
 	// observeParents: true,
-	// slidesPerView: 2,
-	// spaceBetween: 0,
-	// autoHeight: true,
+	slidesPerView: 4,
+	spaceBetween: 0,
+	autoHeight: true,
 	// slidePerColumn: 2,
 	speed: 800,
 
 
 	//touchRatio: 0,
 	//simulateTouch: false,
-	//loop: true,
+	// loop: true,
 	//preloadImages: false,
 	//lazy: true,
 	// Dotts
@@ -99,11 +99,24 @@ let slider = new Swiper('.portfolio__items', {
 	},
 	// /*
 	// */
-	on: {
-		lazyImageReady: function () {
-			ibg();
+
+	breakpoints: {// настройки для разных разрешений
+		768: {
+				slidesPerView: 'auto',
+				spaceBetween: 8
 		},
-	}
+		991: {
+				slidesPerView: 3,
+				spaceBetween: 30
+		}
+}
+
+	// on: {
+	// 	lazyImageReady: function () {
+	// 		ibg();
+	// 	},
+	// }
+
 	// And if we need scrollbar
 	//scrollbar: {
 	//	el: '.swiper-scrollbar',

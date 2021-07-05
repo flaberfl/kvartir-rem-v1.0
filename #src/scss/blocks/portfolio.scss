@@ -9,7 +9,7 @@
   // .portfolio__gallery
   &__items {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     margin: 0px -10px;
   }
 
@@ -33,6 +33,7 @@
     img {
       min-height: 260px;
       max-width: 100%;
+
     }
   }
 }

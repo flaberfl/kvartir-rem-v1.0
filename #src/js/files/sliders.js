@@ -75,9 +75,9 @@ let slider = new Swiper('.portfolio__items', {
 
 	// observer: true,
 	// observeParents: true,
-	slidesPerView: 4,
-	spaceBetween: 0,
-	autoHeight: true,
+	// slidesPerView: 4,
+	// spaceBetween: 0,
+	// autoHeight: true,
 	// slidePerColumn: 2,
 	speed: 800,
 
@@ -100,16 +100,16 @@ let slider = new Swiper('.portfolio__items', {
 	// /*
 	// */
 
-	breakpoints: {// настройки для разных разрешений
+	breakpoints: { // настройки для разных разрешений
 		768: {
-				slidesPerView: 'auto',
-				spaceBetween: 8
+			slidesPerView: 'auto',
+			spaceBetween: 8
 		},
 		991: {
-				slidesPerView: 3,
-				spaceBetween: 30
+			slidesPerView: 3,
+			// spaceBetween: 30
 		}
-}
+	}
 
 	// on: {
 	// 	lazyImageReady: function () {

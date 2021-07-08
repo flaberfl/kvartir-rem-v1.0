@@ -73,8 +73,8 @@ let slider = new Swiper('.portfolio__items', {
 
 	// init: false,
 
-	// observer: true,
-	// observeParents: true,
+	observer: true,
+	observeParents: true,
 	// slidesPerView: 4,
 	// spaceBetween: 0,
 	// autoHeight: true,
@@ -102,12 +102,13 @@ let slider = new Swiper('.portfolio__items', {
 
 	breakpoints: { // настройки для разных разрешений
 		768: {
-			slidesPerView: 'auto',
-			spaceBetween: 8
+			// slidesPerView: 'auto',
+			slidesPerView: 3,
+			spaceBetween: 10
 		},
 		991: {
-			slidesPerView: 3,
-			// spaceBetween: 30
+			slidesPerView: 4,
+			spaceBetween: 20
 		}
 	}
 

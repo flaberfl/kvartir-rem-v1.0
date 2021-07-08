@@ -7,17 +7,7 @@
   &__title {}
 
   // .portfolio__gallery
-  &__items {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -10px;
-  }
-
-  // .portfolio__col
-  &__col {
-    flex: 1 1 23.3%;
-    padding: 10px;
-  }
+  &__items {}
 
   // .portfolio__item
   &__item {

@@ -5,35 +5,28 @@
     position: relative;
   }
 
-  // .portfolio__title
-  &__title {}
-
-  // .portfolio__gallery
-  &__items {}
-
   // .portfolio__item
   &__item {
     border-radius: 10px;
     overflow: hidden;
     position: relative;
 
-    &:hover {
-      &::before {
-        content: '';
-        position: absolute;
-        background: url(../../img/i-loop.png) no-repeat center center;
-        width: 100%;
-        height: 100%;
+    @media (min-width:$md3+px) {
+
+      &:hover {
+        &::before {
+          content: '';
+          position: absolute;
+          background: url(../../img/i-loop.png) no-repeat center center;
+          width: 100%;
+          height: 100%;
+        }
+
+        .portfolio__photo img {
+          opacity: .3;
+          transform: scale(1.4);
+        }
       }
-
-      .portfolio__photo img {
-        opacity: .3;
-        transform: scale(1.4);
-      }
-
-
-
-
     }
 
   }
@@ -48,7 +41,7 @@
     img {
       transition: all 1s ease 0s;
       position: absolute;
-      max-width: 100%;
+      width: 100%;
       height: 100%;
 
       object-fit: cover;

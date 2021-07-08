@@ -234,6 +234,10 @@ body.ie {
   background: #ffeab9;
   border-radius: 50%;
 
+  @media (max-width:$md3+px) {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 .swiper-pagination-bullet-active {

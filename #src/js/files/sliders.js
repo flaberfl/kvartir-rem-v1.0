@@ -88,21 +88,25 @@ let slider = new Swiper('.portfolio__items', {
 	//preloadImages: false,
 	//lazy: true,
 	// Dotts
-	//pagination: {
-	//	el: '.slider-quality__pagging',
-	//	clickable: true,
-	//},
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
 	// Arrows
 	navigation: {
-		nextEl: '.about__more .more__item_next',
-		prevEl: '.about__more .more__item_prev',
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev'
 	},
 	// /*
 	// */
 
 	breakpoints: { // настройки для разных разрешений
-		768: {
-			// slidesPerView: 'auto',
+
+		479: {
+			slidesPerView: 2,
+			spaceBetween: 5
+		},
+		767: {
 			slidesPerView: 3,
 			spaceBetween: 10
 		},

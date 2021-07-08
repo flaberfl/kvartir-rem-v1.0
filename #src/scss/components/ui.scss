@@ -190,7 +190,65 @@ body.ie {
   display: none !important;
 }
 
+.swiper-button {
+  position: absolute;
+  background: transparent url(../../img/sl-arrow.png) no-repeat center center;
+  width: 37px;
+  height: 64px;
+  top: 50%;
+  transform: translate(0, 50%);
+  cursor: pointer;
+
+  transition: opacity .3s;
+  z-index: 20;
+
+  &-next {
+    right: 0;
+  }
+
+  &-prev {
+    transform: rotate(180deg);
+    left: 0;
+    top: 58%;
+  }
+}
+
+.swiper-pagination {
+  position: absolute;
+  width: 100%;
+  margin: 32px 0px 0px 0px;
+
+  text-align: center;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  margin: 0px 5px;
+
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+
+  background: #ffeab9;
+  border-radius: 50%;
+
+}
+
+.swiper-pagination-bullet-active {
+  background: $c_2;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: pointer;
+}
+
+
+
+
 //====================================================================================================
+
 //=====================================================================================================================
 ._tabs {}
 

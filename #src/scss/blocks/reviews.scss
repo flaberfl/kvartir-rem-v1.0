@@ -1,7 +1,9 @@
 .reviews {
 background: #f2fafe;
   // .reviews__container
-  &__container {}
+  &__container {
+    position: relative;
+  }
 
   // .reviews__title
   &__title {}

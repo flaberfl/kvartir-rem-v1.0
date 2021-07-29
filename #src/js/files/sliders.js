@@ -79,7 +79,7 @@ let slider = new Swiper('.portfolio__items', {
 	//lazy: true,
 	// Dotts
 	pagination: {
-		el: '.swiper-pagination',
+		el: '.portfolio__container .swiper-pagination',
 		clickable: true,
 	},
 	// Arrows
@@ -110,27 +110,15 @@ let slider2 = new Swiper('.reviews__items', {
 	observer: true,
 	observeParents: true,
 	slidesPerView: 1,
-	// spaceBetween: 0,
-	// autoHeight: true,
-	// slidePerColumn: 2,
 	speed: 800,
 
-
-	//touchRatio: 0,
-	//simulateTouch: false,
-	// loop: true,
-	//preloadImages: false,
-	//lazy: true,
-	// Dotts
-
-
 	pagination: {
-		el: '.swiper-pagination-rev',
+		el: '.reviews__container .swiper-pagination',
 		clickable: true,
 	},
 
 	navigation: {
-		nextEl: '.swiper-button-next-rev',
-		prevEl: '.swiper-button-prev-rev'
+		nextEl: '.reviews__container .swiper-button-next',
+		prevEl: '.reviews__container .swiper-button-prev'
 	},
 });

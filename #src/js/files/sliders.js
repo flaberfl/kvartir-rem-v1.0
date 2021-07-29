@@ -65,18 +65,10 @@ let slider = new Swiper('.portfolio__items', {
 
 	observer: true,
 	observeParents: true,
-	// slidesPerView: 4,
-	// spaceBetween: 0,
-	// autoHeight: true,
-	// slidePerColumn: 2,
+
 	speed: 800,
 
 
-	//touchRatio: 0,
-	//simulateTouch: false,
-	// loop: true,
-	//preloadImages: false,
-	//lazy: true,
 	// Dotts
 	pagination: {
 		el: '.portfolio__container .swiper-pagination',
@@ -107,10 +99,9 @@ let slider = new Swiper('.portfolio__items', {
 
 let slider2 = new Swiper('.reviews__items', {
 
-	observer: true,
-	observeParents: true,
-	slidesPerView: 1,
+	// slidesPerView: auto,
 	speed: 800,
+	// loop: true,
 
 	pagination: {
 		el: '.reviews__container .swiper-pagination',

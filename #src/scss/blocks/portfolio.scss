@@ -39,13 +39,14 @@
     padding-bottom: 100%;
 
     img {
-      transition: all 1s ease 0s;
       position: absolute;
       width: 100%;
       height: 100%;
 
       object-fit: cover;
       object-position: center;
+
+      transition: all 1s ease 0s;
     }
   }
 }

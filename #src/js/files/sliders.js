@@ -62,16 +62,6 @@ if (sliderScrollItems.length > 0) {
 function sliders_bild_callback(params) {}
 
 let slider = new Swiper('.portfolio__items', {
-	/*
-	// effect: 'fade',
-	autoplay: {
-		delay: 3000,
-		disableOnInteraction: false,
-	},
-	*/
-
-
-	// init: false,
 
 	observer: true,
 	observeParents: true,
@@ -97,8 +87,6 @@ let slider = new Swiper('.portfolio__items', {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev'
 	},
-	// /*
-	// */
 
 	breakpoints: { // настройки для разных разрешений
 
@@ -115,15 +103,34 @@ let slider = new Swiper('.portfolio__items', {
 			spaceBetween: 20
 		}
 	}
+});
 
-	// on: {
-	// 	lazyImageReady: function () {
-	// 		ibg();
-	// 	},
-	// }
+let slider2 = new Swiper('.reviews__items', {
 
-	// And if we need scrollbar
-	//scrollbar: {
-	//	el: '.swiper-scrollbar',
-	//},
+	observer: true,
+	observeParents: true,
+	slidesPerView: 1,
+	// spaceBetween: 0,
+	// autoHeight: true,
+	// slidePerColumn: 2,
+	speed: 800,
+
+
+	//touchRatio: 0,
+	//simulateTouch: false,
+	// loop: true,
+	//preloadImages: false,
+	//lazy: true,
+	// Dotts
+
+
+	pagination: {
+		el: '.swiper-pagination-rev',
+		clickable: true,
+	},
+
+	navigation: {
+		nextEl: '.swiper-button-next-rev',
+		prevEl: '.swiper-button-prev-rev'
+	},
 });

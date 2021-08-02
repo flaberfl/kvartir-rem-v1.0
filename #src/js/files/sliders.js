@@ -63,9 +63,6 @@ function sliders_bild_callback(params) {}
 
 let slider = new Swiper('.portfolio__items', {
 
-	observer: true,
-	observeParents: true,
-
 	speed: 800,
 
 
@@ -99,7 +96,7 @@ let slider = new Swiper('.portfolio__items', {
 
 let slider2 = new Swiper('.reviews__items', {
 
-	// slidesPerView: auto,
+	slidesPerView: 1,
 	speed: 800,
 	// loop: true,
 

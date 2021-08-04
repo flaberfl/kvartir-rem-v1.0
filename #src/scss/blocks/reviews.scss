@@ -10,20 +10,21 @@
   &__title {}
 
   // .reviews__items
-  &__items {}
+  &__items {
+    max-width: 990px;
+    margin: 0 auto;
+  }
 
   // .reviews__item
   &__item {
-    max-width: 990px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
   }
 
   // .reviews__avatar
   &__avatar {
-    flex: 1 1 100%;
+    // flex: 0 1 100%;
     width: 120px;
     border-radius: 50%;
     margin: 0px 20px 0px 0px;

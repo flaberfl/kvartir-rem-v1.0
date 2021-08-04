@@ -196,7 +196,6 @@ body.ie {
   width: 37px;
   height: 64px;
   top: 50%;
-  transform: translate(0, 50%);
   cursor: pointer;
 
   transition: opacity .3s;
@@ -209,12 +208,11 @@ body.ie {
   &-prev {
     transform: rotate(180deg);
     left: 0;
-    top: 58%;
   }
 }
 
 .swiper-pagination {
-  position: absolute;
+  // position: absolute;
   width: 100%;
   margin: 32px 0px 0px 0px;
 

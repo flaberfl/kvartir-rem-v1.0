@@ -4,6 +4,10 @@
   // .reviews__container
   &__container {
     position: relative;
+
+    .swiper-pagination {
+      margin-bottom: 30px;
+    }
   }
 
   // .reviews__title
@@ -51,5 +55,15 @@
   }
 
   // .reviews__btn
-  &__btn {}
+  &__btn {
+    // margin: 70px 0px 0px 0px;
+    align-items: center;
+    min-width: 0;
+    justify-content: center;
+
+    img {
+      display: block;
+      margin-left: 10px;
+    }
+  }
 }

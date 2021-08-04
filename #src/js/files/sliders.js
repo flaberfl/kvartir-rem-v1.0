@@ -73,8 +73,8 @@ let slider = new Swiper('.portfolio__items', {
 	},
 	// Arrows
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev'
+		nextEl: '.portfolio__container .swiper-button-next',
+		prevEl: '.portfolio__container .swiper-button-prev'
 	},
 
 	breakpoints: { // настройки для разных разрешений
@@ -98,7 +98,6 @@ let slider2 = new Swiper('.reviews__items', {
 
 	slidesPerView: 1,
 	speed: 800,
-	// loop: true,
 
 	pagination: {
 		el: '.reviews__container .swiper-pagination',

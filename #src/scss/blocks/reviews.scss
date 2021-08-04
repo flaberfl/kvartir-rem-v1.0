@@ -17,6 +17,7 @@
 
   // .reviews__item
   &__item {
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +26,7 @@
   // .reviews__avatar
   &__avatar {
     // flex: 0 1 100%;
-    width: 120px;
+    width: 160px;
     border-radius: 50%;
     margin: 0px 20px 0px 0px;
   }

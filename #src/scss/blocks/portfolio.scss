@@ -3,6 +3,10 @@
   // .portfolio__container
   &__container {
     position: relative;
+
+    &.swiper-button-prev {
+      right: 10px;
+    }
   }
 
   // .portfolio__item

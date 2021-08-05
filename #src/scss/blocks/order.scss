@@ -39,13 +39,12 @@
   &__line {}
 
   // .order-form__input
-  &__input {
-    padding: 15px 15px 15px 20px;
-
-  }
+  &__input {}
 
   // .order-form__textarea
-  &__textarea {}
+  &__textarea {
+    padding: 15px 15px 15px 20px;
+  }
 
   // .order-form__btn
   &__btn {}

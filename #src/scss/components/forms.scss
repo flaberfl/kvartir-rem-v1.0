@@ -148,7 +148,9 @@ textarea {
 
 	&._focus {}
 
-	&._error {}
+	&._error {
+		border: 1px solid red !important;
+	}
 }
 
 .textarea {

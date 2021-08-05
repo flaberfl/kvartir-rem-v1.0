@@ -432,15 +432,17 @@
             <div class="order-form__fields">
               <div class="order-form__column order-form__column--in">
                 <div class="order-form__line">
-                  <input autocomplete="off" type="text" name="name" placeholder="Имя" class="order-form__input input">
+                  <input autocomplete="off" type="text" name="form[]" data-error="Не заполнено поле!" placeholder="Имя"
+                    class="order-form__input input _req">
                 </div>
                 <div class="order-form__line">
-                  <input autocomplete="off" type="text" name="phone" placeholder="Ваш телефон"
-                    class="order-form__input input">
+                  <input autocomplete="off" type="text" name="phone" data-error="Не заполнено поле!"
+                    placeholder="Ваш телефон" class="order-form__input input _req">
                 </div>
               </div>
               <div class="order-form__column order-form__column--txt">
-                <textarea class="order-form__textarea textarea" name=" text" placeholder="Задать вопрос"></textarea>
+                <textarea class="order-form__textarea textarea _req" name="text" data-error="Не заполнено поле!"
+                  placeholder="Задать вопрос"></textarea>
               </div>
             </div>
             <button class="order-form__btn btn" type="submit">Отправить</button>

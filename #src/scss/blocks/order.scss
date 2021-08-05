@@ -10,6 +10,7 @@
   max-width: 700px;
   padding: 25px 15px;
   margin: 0 auto;
+
   border: 5px solid #fff;
   background: #fff;
   box-shadow: 0 4px 13px -3px rgba(#000, .2);
@@ -30,23 +31,39 @@
   // .order-form__fields
   &__fields {
     display: flex;
+    // justify-content: space-between;
   }
 
   // .order-form__column
-  &__column {}
+  &__column {
+    &--in {
+      flex: 0 0 40%;
+    }
+    &--txt {
+      flex: 1 0 60%;
+    }
+  }
 
   // .order-form__line
-  &__line {}
+  &__line {
+    margin: 0px 0px 25px 0px;
+    // max-width: 245px;
+  }
 
   // .order-form__input
-  &__input {
+  // &__input {
+  //   width: 100%;
+  // }
+
+  &__input,
+  &__textarea {
     border: 1px solid rgba(255, 255, 255, 0.35);
+    border: 1px solid red;
   }
 
   // .order-form__textarea
-  &__textarea {
-    padding: 15px 15px 15px 20px;
-  }
+  &__textarea {}
+
 
   // .order-form__btn
   &__btn {}

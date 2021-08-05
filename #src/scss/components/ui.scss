@@ -141,11 +141,7 @@ body.ie {
 }
 
 //====================================================================================================
-#map {
-  background: url("../img/icons/loading.gif") center / 50px no-repeat;
-}
 
-//====================================================================================================
 ._swiper {
   overflow: hidden;
 
@@ -192,10 +188,11 @@ body.ie {
 
 .swiper-button {
   position: absolute;
-  background: transparent url(../../img/sl-arrow.png) no-repeat center center;
+  background: transparent url(../../img/sl-arrow.png) no-repeat;
   width: 37px;
   height: 64px;
   top: 50%;
+  transform: translate(0, 50%);
   cursor: pointer;
 
   transition: opacity .3s;
@@ -206,13 +203,13 @@ body.ie {
   }
 
   &-prev {
-    transform: rotate(180deg);
+    transform: translate(0, 50%) rotate(180deg);
     left: 0;
   }
 }
 
 .swiper-pagination {
-  // position: absolute;
+  position: absolute;
   width: 100%;
   margin: 32px 0px 0px 0px;
 

@@ -10,9 +10,12 @@
     }
 
     .swiper-button {
-      @media (max-width: 1023.99px) {
+      @media (max-width:$md4+px) {
         display: none;
       }
+
+      // @media (max-width: 1023.99px) {
+      // }
     }
   }
 
@@ -27,6 +30,8 @@
 
   // .reviews__item
   &__item {
+    @media (min-width:$md3+px) {}
+
     margin: 0;
     display: flex;
     justify-content: space-between;

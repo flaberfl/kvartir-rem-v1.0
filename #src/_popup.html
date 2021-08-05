@@ -5,8 +5,29 @@
 			<h3>Обратный звонок</h3>
 			<p>Оставьте свои данные и наш менеджер свяжется с вами</p>
 			<form method="post" action="mail.php">
-				<input autocomplete="off" type="text" placeholder="Имя" name="name" data-error="Ошибка" data-value="" class="input _req">
-				<input autocomplete="off" type="text" placeholder="Телефон" name="phone" data-error="Ошибка" data-value="" class="input _req _phone">
+				<input autocomplete="off" type="text" placeholder="Имя" name="name" data-error="Ошибка" data-value=""
+					class="input _req">
+				<input autocomplete="off" type="text" placeholder="Телефон" name="phone" data-error="Ошибка" data-value=""
+					class="input _req _phone">
+				<button type="submit" class="form__btn btn">Отправить</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="popup popup_review">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+			<h3>Оставьте отзыв</h3>
+			<p>Оставьте свои данные и наш менеджер свяжется с вами</p>
+			<form method="post" action="mail.php">
+				<input autocomplete="off" type="text" placeholder="Имя" name="name" data-error="Ошибка" data-value=""
+					class="input _req">
+				<input autocomplete="off" type="text" placeholder="Телефон" name="phone" data-error="Ошибка" data-value=""
+					class="input _req _phone">
+				<textarea class="order-form__textarea textarea _req" name="text" rows="4" data-value="" data-error="Не заполнено поле!"
+					placeholder="Отзыв"></textarea>
 				<button type="submit" class="form__btn btn">Отправить</button>
 			</form>
 		</div>

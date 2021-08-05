@@ -61,16 +61,6 @@
     &__input,
     &__textarea {
       border: 1px solid $c_2;
-
-      &:focus {
-        border-color: #8643DC;
-        box-shadow: 0 4px 13px -3px rgba(#000, .6);
-      }
-    }
-
-    // .order-form__btn
-    &__btn {
-
     }
   }
 }

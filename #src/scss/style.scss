@@ -78,11 +78,10 @@ body {
   @media (max-width:$md2+px) {
     padding: 70px 0px;
   }
+}
 
-  &__top,
-  &__footer {
-    text-align: center;
-  }
+._tac {
+  text-align: center;
 }
 
 ._sticky {

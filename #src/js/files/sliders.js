@@ -98,6 +98,7 @@ let slider2 = new Swiper('.reviews__items', {
 
 	slidesPerView: 1,
 	speed: 800,
+	// spaceBetween: 20,
 
 	pagination: {
 		el: '.reviews__container .swiper-pagination',

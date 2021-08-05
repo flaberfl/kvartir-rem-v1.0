@@ -26,6 +26,7 @@
   &__items {
     max-width: 990px;
     margin: 0 auto;
+    // max-width: 100%;
   }
 
   // .reviews__item
@@ -42,16 +43,22 @@
     }
   }
 
+  // .reviews__item-content
+  &__item-content {
+    padding: 0px 30px;
+
+  }
+
   // .reviews__avatar
   &__avatar {
-    width: 160px;
-    border-radius: 50%;
-    margin: 0px 20px 0px 0px;
+    width: 110px;
+    // border-radius: 50%;
+    // margin: 0px 20px 0px 0px;
 
-    @media (max-width:$md3+px) {
-      margin: 0px 10px 0px 0px;
-      width: 100px;
-    }
+    // @media (max-width:$md3+px) {
+    //   margin: 0px 10px 0px 0px;
+    //   width: 100px;
+    // }
 
     @media (max-width:$md4+px) {
       display: none;
@@ -70,6 +77,7 @@
 
   // .reviews__item-text
   &__item-text {
+
     font-size: 17px;
     line-height: 1.2;
 

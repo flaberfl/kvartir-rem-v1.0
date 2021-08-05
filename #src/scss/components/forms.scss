@@ -145,9 +145,9 @@ textarea {
 	background: transparent;
 	width: 100%;
 	display: block;
-	
+
 	&._focus {}
-	
+
 	&._error {}
 }
 
@@ -155,12 +155,15 @@ textarea {
 	height: 100%;
 }
 
-.input, .textarea {
+.input,
+.textarea {
 	padding: 15px 15px 15px 20px;
 	width: 100%;
 	border-radius: 26px;
 
 	font-size: 16px;
+
+	transition: border 0.7s ease 0s;
 }
 
 //</INPUT>====================================================================================================

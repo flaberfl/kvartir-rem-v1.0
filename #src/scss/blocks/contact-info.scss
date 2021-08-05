@@ -1,7 +1,5 @@
 .contact-info {
   padding: 40px 0;
-  // .contact-info__container
-  &__container {}
 
   // .contact-info__items
   &__items {
@@ -19,9 +17,14 @@
     color: #1489de;
     text-align: center;
 
-    @media (max-width: 635px){
-        flex: 0 1 100%;
-        margin: 0px 0px 25px 0px;
+    @media (max-width: 635px) {
+      flex: 0 1 100%;
+      margin: 0px 0px 25px 0px;
+
+      &:last-child{
+        margin: 0px 0px 0px 0px;
+      }
+
     }
 
     img {

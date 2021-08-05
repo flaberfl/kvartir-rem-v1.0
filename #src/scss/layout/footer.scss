@@ -1,16 +1,29 @@
-footer {
+.footer {
   padding: 40px 0;
-  text-align: center;
-  text-transform: uppercase;
-
+  
   background: #232323;
+
+  text-align: center;
+  
   
   &__title {
+    margin: 0px 0px 30px 0px;
+    
     font-size: 26px;
+    line-height: 1.2;
     color: #fff;
+    text-transform: uppercase;
+  }
+
+  &__copiright {
+    font-size: 16px;
+    color: #797979;
+
+    a {
+      font-size: 17px;
+      color: #a5a5a5;
+    }
   }
 }
-
-//====================================================================================================
 
 //====================================================================================================

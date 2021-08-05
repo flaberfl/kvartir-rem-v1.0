@@ -1,0 +1,21 @@
+.contact-info {
+
+  // .contact-info__container
+  &__container {}
+
+  // .contact-info__items
+  &__items {}
+
+  // .contact-info__item
+  &__item {
+    font-size: 19px;
+    font-weight: 700;
+    color: #1489de;
+
+    a {
+      font-size: 19px;
+      font-weight: 700;
+      color: #1489de;
+    }
+  }
+}

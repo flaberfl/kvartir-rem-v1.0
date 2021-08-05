@@ -5,7 +5,6 @@
   &__container {}
 }
 
-
 .order-form {
   max-width: 700px;
   padding: 25px 15px;
@@ -30,25 +29,40 @@
 
   // .order-form__fields
   &__fields {
-    display: flex;
-    justify-content: space-between;
+    margin: 0px 0px 25px 0px;
+
+    @media (min-width: 575.99px) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   // .order-form__column
   &__column {
-    &--in {
-      flex: 0 0 40%;
-      margin: 0px 20px 0px 0px;
+
+    @media (min-width: 575.99px) {
+      &--in {
+        flex: 0 0 40%;
+        margin: 0px 20px 0px 0px;
+      }
+
+      &--txt {
+        flex: 0 1 60%;
+      }
+
     }
 
-    &--txt {
-      flex: 0 1 60%;
-    }
   }
 
   // .order-form__line
   &__line {
     margin: 0px 0px 25px 0px;
+
+    @media (min-width: 575.99px) {
+      &:last-child {
+        margin: 0px 0px 0px 0px;
+      }
+    }
   }
 
   &__input,
@@ -62,5 +76,10 @@
 
 
   // .order-form__btn
-  &__btn {}
+  &__btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 18px;
+    text-align: center;
+  }
 }

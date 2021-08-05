@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   // .contact-info__item
@@ -17,6 +18,11 @@
     font-weight: 700;
     color: #1489de;
     text-align: center;
+
+    @media (max-width: 635px){
+        flex: 0 1 100%;
+        margin: 0px 0px 25px 0px;
+    }
 
     img {
       margin: 0px 0px 10px 0px;

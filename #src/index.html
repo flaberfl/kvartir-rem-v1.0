@@ -425,24 +425,25 @@
 
       <section class="order _section">
         <div class="order__container _container">
-          <form class="order__form form" action="#">
-            <h2 class="order__title form__title">ОСТАВЬТЕ ЗАЯВКУ</h2>
-            <div class="order__text form__text">И получите экспресс-оценку конечной стоимости ремонта вашего помещения
-            </div>
-            <div class="form__column">
-              <div class="form__line">
-                <input autocomplete="off" type="text" name="name" placeholder="Имя" class="input">
+          <form class="order-form" action="/">
+            <h2 class="order-form__title form__title">ОСТАВЬТЕ ЗАЯВКУ</h2>
+            <p class="order-form__text">И получите экспресс-оценку конечной стоимости ремонта вашего помещения
+            </p>
+            <div class="order-form__fields">
+              <div class="order-form__column">
+                <div class="order-form__line">
+                  <input autocomplete="off" type="text" name="name" placeholder="Имя" class="order-form__input">
+                </div>
+                <div class="order-form__line">
+                  <input autocomplete="off" type="text" name="phone" placeholder="Ваш телефон"
+                    class="order-form__input">
+                </div>
               </div>
-              <div class="form__line">
-                <input autocomplete="off" type="text" name="phone" placeholder="Ваш телефон" class="input">
+              <div class="order-form__column">
+                <textarea class="order-form__textarea" name=" text" placeholder="Задать вопрос"></textarea>
               </div>
             </div>
-            <div class="form__column">
-              <textarea name="text" placeholder="Задать вопрос"></textarea>
-            </div>
-            <div class="form__action">
-              <button class="form__btn btn" type="submit">Отправить</button>
-            </div>
+            <button class=" order-form__btn btn" type="submit">Отправить</button>
           </form>
         </div>
       </section>

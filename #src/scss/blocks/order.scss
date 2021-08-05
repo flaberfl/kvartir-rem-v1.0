@@ -3,47 +3,50 @@
 
   // .order__container
   &__container {}
+}
 
-  // .order__form
-  &__form {
-    max-width: 700px;
-    padding: 25px 15px;
 
-    border: 5px solid #fff;
-    background: #fff;
-    box-shadow: 0 4px 13px -3px rgba(#000, .2);
-    border-radius: 10px;
-  }
+.order-form {
+  max-width: 700px;
+  padding: 25px 15px;
+  margin: 0 auto;
+  border: 5px solid #fff;
+  background: #fff;
+  box-shadow: 0 4px 13px -3px rgba(#000, .2);
+  border-radius: 10px;
 
+  // .order-form__title
   &__title {
     margin: 0px 0px 10px 0px;
   }
 
+  // .order-form__text
   &__text {
     margin: 0px 0px 20px 0px;
 
     font-size: 16px;
   }
-}
 
-.form {
-  margin: 0 auto;
+  // .order-form__fields
+  &__fields {
+    display: flex;
+  }
 
-  // .form__title
-  &__title {}
-
-  // .form__text
-  &__text {}
-
-  // .form__column
+  // .order-form__column
   &__column {}
 
-  // .form__line
+  // .order-form__line
   &__line {}
 
-  // .form__action
-  &__action {}
+  // .order-form__input
+  &__input {
+    padding: 15px 15px 15px 20px;
 
-  // .form__btn
+  }
+
+  // .order-form__textarea
+  &__textarea {}
+
+  // .order-form__btn
   &__btn {}
 }

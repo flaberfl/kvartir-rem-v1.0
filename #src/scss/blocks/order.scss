@@ -6,12 +6,28 @@
 
   // .order__form
   &__form {
-    // background: #fff;
-    border-radius: 100px;
+    max-width: 700px;
+    padding: 25px 15px;
+
+    border: 5px solid #fff;
+    background: #fff;
+    box-shadow: 0 4px 13px -3px rgba(#000, .2);
+    border-radius: 10px;
+  }
+
+  &__title {
+    margin: 0px 0px 10px 0px;
+  }
+
+  &__text {
+    margin: 0px 0px 20px 0px;
+
+    font-size: 16px;
   }
 }
 
 .form {
+  margin: 0 auto;
 
   // .form__title
   &__title {}

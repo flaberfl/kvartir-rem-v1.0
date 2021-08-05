@@ -1,5 +1,12 @@
 //<FORM ()>====================================================================================================
 .form {
+	margin: 0 auto;
+
+	&__title {
+		font-size: 24px;
+		font-weight: 700;
+	}
+
 	&__row {}
 
 	&__column {}
@@ -136,6 +143,7 @@ textarea {
 
 .input {
 	border-radius: 0 !important;
+	background: transparent;
 	width: 100%;
 	display: block;
 	padding: 15px 15px 15px 20px;

@@ -31,29 +31,25 @@
   // .order-form__fields
   &__fields {
     display: flex;
-    // justify-content: space-between;
+    justify-content: space-between;
   }
 
   // .order-form__column
   &__column {
     &--in {
       flex: 0 0 40%;
+      margin: 0px 20px 0px 0px;
     }
+
     &--txt {
-      flex: 1 0 60%;
+      flex: 0 1 60%;
     }
   }
 
   // .order-form__line
   &__line {
     margin: 0px 0px 25px 0px;
-    // max-width: 245px;
   }
-
-  // .order-form__input
-  // &__input {
-  //   width: 100%;
-  // }
 
   &__input,
   &__textarea {

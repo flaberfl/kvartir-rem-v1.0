@@ -10,6 +10,7 @@
 	height: 100%;
 	visibility: hidden;
 	transition: visibility 0.8s ease 0s;
+
 	&::before {
 		content: "";
 		background-color: rgba(0, 0, 0, 0.9);
@@ -21,27 +22,34 @@
 		opacity: 0;
 		transition: opacity 0.8s ease 0s;
 	}
+
 	&.show {
 		visibility: visible;
 		overflow: auto;
+
 		&::before {
 			opacity: 1;
 		}
+
 		.popup__body {
 			transform: scale(1);
 		}
 	}
+
 	&._active {
 		visibility: visible;
 		overflow: auto;
+
 		&::before {
 			opacity: 1;
 		}
+
 		.popup__body {
 			transition: all 0.3s ease 0.2s;
 			transform: scale(1);
 		}
 	}
+
 	// .popup__content
 	&__content {
 		display: flex;
@@ -54,26 +62,80 @@
 		justify-content: center;
 		align-items: center;
 	}
+
 	// .popup__body
 	&__body {
+		max-width: 380px;
+		padding: 40px;
+		width: 100%;
+
 		transform: scale(0);
 		transition: all 0.3s ease 0s;
-		background-color: #fff;
-		padding: 50px;
-		width: 100%;
-		max-width: 800px;
+		background-color: #00a0e8;
+		border-radius: 10px;
+		border: 5px solid#fff;
 	}
+
 	// .popup__close
 	&__close {
-		width: 15px;
-		height: 15px;
-		position: absolute;
-		top: 0px;
-		right: 0px;
+		// width: 15px;
+		// height: 15px;
+		// position: absolute;
+		// top: 0px;
+		// right: 0px;
 		cursor: pointer;
-		z-index: 30;
-		background: url("../img/icons/close.svg") 0 0 no-repeat;
+		// z-index: 30;
+		// background: url("../img/icons/close.svg") 0 0 no-repeat;
+
+		position: absolute;
+
+		width: 44px;
+		height: 44px;
+		background-color: #fff;
+		z-index: 999;
+
+		border-radius: 50%;
+
+		box-shadow: 0 3px 14px #00000045;
+		right: -24px;
+		top: -24px;
+		// opacity: .6;
+		transition: 0.3s all;
+		
+		&:hover {
+			box-shadow: 0 3px 14px #00000094;
+			
+			&::before,
+			&::after {
+				opacity: 1;
+			}
+		}
+		
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			top: 12px;
+			right: 20px;
+			
+			opacity: .7;
+			
+			height: 20px;
+			width: 4px;
+			background-color: #6d6d6d;
+			transition: 0.3s all;
+		}
+
+		&::before {
+			transform: rotate(45deg);
+		}
+
+		&::after {
+			transform: rotate(-45deg);
+		}
+
 	}
 }
+
 //====================================================================================================
 //====================================================================================================

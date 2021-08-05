@@ -39,7 +39,9 @@
   &__line {}
 
   // .order-form__input
-  &__input {}
+  &__input {
+    border: 1px solid rgba(255, 255, 255, 0.35);
+  }
 
   // .order-form__textarea
   &__textarea {

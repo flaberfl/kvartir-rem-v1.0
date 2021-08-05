@@ -74,6 +74,12 @@
 		background-color: #00a0e8;
 		border-radius: 10px;
 		border: 5px solid#fff;
+
+		.input {
+			margin: 0px 0px 15px 0px;
+
+			text-align: center;
+		}
 	}
 
 	// .popup__close
@@ -101,25 +107,25 @@
 		top: -24px;
 		// opacity: .6;
 		transition: 0.3s all;
-		
+
 		&:hover {
 			box-shadow: 0 3px 14px #00000094;
-			
+
 			&::before,
 			&::after {
 				opacity: 1;
 			}
 		}
-		
+
 		&::before,
 		&::after {
 			content: '';
 			position: absolute;
 			top: 12px;
 			right: 20px;
-			
+
 			opacity: .7;
-			
+
 			height: 20px;
 			width: 4px;
 			background-color: #6d6d6d;

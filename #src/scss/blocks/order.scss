@@ -1,0 +1,33 @@
+.order {
+  background-color: $c_1;
+
+  // .order__container
+  &__container {}
+
+  // .order__form
+  &__form {
+    // background: #fff;
+    border-radius: 100px;
+  }
+}
+
+.form {
+
+  // .form__title
+  &__title {}
+
+  // .form__text
+  &__text {}
+
+  // .form__column
+  &__column {}
+
+  // .form__line
+  &__line {}
+
+  // .form__action
+  &__action {}
+
+  // .form__btn
+  &__btn {}
+}

@@ -13,6 +13,8 @@
   &__column {
     flex: 0 1 50%;
     padding: 0px 15px;
+    margin-bottom: 30px;
+
 
     @media (max-width: 1200px) {
       flex: 0 1 70%;
@@ -29,6 +31,8 @@
     display: flex;
     justify-content: flex-end;
     margin-bottom: 40px;
+
+    height: 100%;
 
     background-repeat: no-repeat;
     background-position: center center;
@@ -66,9 +70,13 @@
   }
 
   &__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     padding: 25px 20px 20px;
-    background-color: #fff;
     flex: 0 1 68%;
+
+    background-color: #fff;
 
     @media (max-width: 1200px) {
       flex: 0 1 55%;
@@ -85,6 +93,7 @@
     font-size: 26px;
     font-weight: 700;
     color: #3d92e0;
+    flex: 1 1 auto;
 
     @media (max-width:$md3+px) {
       font-size: 24px;
@@ -93,7 +102,7 @@
 
   // .services__list
   &__list {
-    padding: 25px 0px 35px;
+    padding-bottom: 35px;
 
     @media (max-width:$md3+px) {
       padding: 20px 0px 30px;
@@ -131,6 +140,7 @@
   // .services__order
   &__order {
     position: relative;
+    margin-right: auto;
 
     font-size: 19px;
     font-weight: 700;

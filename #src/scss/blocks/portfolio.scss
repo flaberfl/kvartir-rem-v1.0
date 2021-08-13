@@ -1,4 +1,15 @@
 .portfolio {
+  padding-bottom: 90px;
+  
+  @media (max-width:$md2+px){
+    padding-bottom: 90px;
+  }
+
+  @media (max-width:$md3+px){
+     padding-bottom: 80px; 
+  }
+
+  
 
   // .portfolio__container
   &__container {

@@ -1,6 +1,10 @@
 .features {
   padding: 55px 0px 121px;
   background: #f3faff;
+  
+  @media (max-width:$md3+px){
+    padding: 35px 0px 0px;
+  }
 
   // .features__items
   &__items {

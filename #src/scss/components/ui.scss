@@ -67,6 +67,20 @@
   }
 }
 
+#upbutton {
+  background: #f5bc30;
+  position: fixed;
+  right: 27px;
+  bottom: 20px;
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(#000, .2);
+  color: #fff;
+  transition: 0.3s all;
+}
+
+
 //</BUTTONS>====================================================================================================
 
 //<ГОТОВЫЕ КЛАССЫ>====================================================================================================

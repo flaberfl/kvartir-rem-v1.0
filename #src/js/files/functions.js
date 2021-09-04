@@ -281,75 +281,6 @@ function gallery_init() {
 	}
 }
 //=================
-//SearchInList
-function search_in_list(input) {
-	let ul = input.parentNode.querySelector('ul')
-	let li = ul.querySelectorAll('li');
-	let filter = input.value.toUpperCase();
-
-	for (i = 0; i < li.length; i++) {
-		let el = li[i];
-		let item = el;
-		txtValue = item.textContent || item.innerText;
-		if (txtValue.toUpperCase().indexOf(filter) > -1) {
-			el.style.display = "";
-		} else {
-			el.style.display = "none";
-		}
-	}
-}
-//=================
-//DigiFormat
-function digi(str) {
-	var r = str.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, "$1 ");
-	return r;
-}
-//=================
-//DiGiAnimate
-function digi_animate(digi_animate) {
-	if (digi_animate.length > 0) {
-		for (let index = 0; index < digi_animate.length; index++) {
-			const el = digi_animate[index];
-			const el_to = parseInt(el.innerHTML.replace(' ', ''));
-			if (!el.classList.contains('_done')) {
-				digi_animate_value(el, 0, el_to, 1500);
-			}
-		}
-	}
-}
-
-function digi_animate_value(el, start, end, duration) {
-	var obj = el;
-	var range = end - start;
-	// no timer shorter than 50ms (not really visible any way)
-	var minTimer = 50;
-	// calc step time to show all interediate values
-	var stepTime = Math.abs(Math.floor(duration / range));
-
-	// never go below minTimer
-	stepTime = Math.max(stepTime, minTimer);
-
-	// get current time and calculate desired end time
-	var startTime = new Date().getTime();
-	var endTime = startTime + duration;
-	var timer;
-
-	function run() {
-		var now = new Date().getTime();
-		var remaining = Math.max((endTime - now) / duration, 0);
-		var value = Math.round(end - (remaining * range));
-		obj.innerHTML = digi(value);
-		if (value == end) {
-			clearInterval(timer);
-		}
-	}
-
-	timer = setInterval(run, stepTime);
-	run();
-
-	el.classList.add('_done');
-}
-//=================
 //Popups
 let popup_link = document.querySelectorAll('._popup-link');
 let popups = document.querySelectorAll('.popup');
@@ -433,70 +364,70 @@ document.addEventListener('keydown', function (e) {
 
 //=================
 //SlideToggle
-let _slideUp = (target, duration = 500) => {
-	target.style.transitionProperty = 'height, margin, padding';
-	target.style.transitionDuration = duration + 'ms';
-	target.style.height = target.offsetHeight + 'px';
-	target.offsetHeight;
-	target.style.overflow = 'hidden';
-	target.style.height = 0;
-	target.style.paddingTop = 0;
-	target.style.paddingBottom = 0;
-	target.style.marginTop = 0;
-	target.style.marginBottom = 0;
-	window.setTimeout(() => {
-		target.style.display = 'none';
-		target.style.removeProperty('height');
-		target.style.removeProperty('padding-top');
-		target.style.removeProperty('padding-bottom');
-		target.style.removeProperty('margin-top');
-		target.style.removeProperty('margin-bottom');
-		target.style.removeProperty('overflow');
-		target.style.removeProperty('transition-duration');
-		target.style.removeProperty('transition-property');
-		target.classList.remove('_slide');
-	}, duration);
-}
-let _slideDown = (target, duration = 500) => {
-	target.style.removeProperty('display');
-	let display = window.getComputedStyle(target).display;
-	if (display === 'none')
-		display = 'block';
+// let _slideUp = (target, duration = 500) => {
+// 	target.style.transitionProperty = 'height, margin, padding';
+// 	target.style.transitionDuration = duration + 'ms';
+// 	target.style.height = target.offsetHeight + 'px';
+// 	target.offsetHeight;
+// 	target.style.overflow = 'hidden';
+// 	target.style.height = 0;
+// 	target.style.paddingTop = 0;
+// 	target.style.paddingBottom = 0;
+// 	target.style.marginTop = 0;
+// 	target.style.marginBottom = 0;
+// 	window.setTimeout(() => {
+// 		target.style.display = 'none';
+// 		target.style.removeProperty('height');
+// 		target.style.removeProperty('padding-top');
+// 		target.style.removeProperty('padding-bottom');
+// 		target.style.removeProperty('margin-top');
+// 		target.style.removeProperty('margin-bottom');
+// 		target.style.removeProperty('overflow');
+// 		target.style.removeProperty('transition-duration');
+// 		target.style.removeProperty('transition-property');
+// 		target.classList.remove('_slide');
+// 	}, duration);
+// }
+// let _slideDown = (target, duration = 500) => {
+// 	target.style.removeProperty('display');
+// 	let display = window.getComputedStyle(target).display;
+// 	if (display === 'none')
+// 		display = 'block';
 
-	target.style.display = display;
-	let height = target.offsetHeight;
-	target.style.overflow = 'hidden';
-	target.style.height = 0;
-	target.style.paddingTop = 0;
-	target.style.paddingBottom = 0;
-	target.style.marginTop = 0;
-	target.style.marginBottom = 0;
-	target.offsetHeight;
-	target.style.transitionProperty = "height, margin, padding";
-	target.style.transitionDuration = duration + 'ms';
-	target.style.height = height + 'px';
-	target.style.removeProperty('padding-top');
-	target.style.removeProperty('padding-bottom');
-	target.style.removeProperty('margin-top');
-	target.style.removeProperty('margin-bottom');
-	window.setTimeout(() => {
-		target.style.removeProperty('height');
-		target.style.removeProperty('overflow');
-		target.style.removeProperty('transition-duration');
-		target.style.removeProperty('transition-property');
-		target.classList.remove('_slide');
-	}, duration);
-}
-let _slideToggle = (target, duration = 500) => {
-	if (!target.classList.contains('_slide')) {
-		target.classList.add('_slide');
-		if (window.getComputedStyle(target).display === 'none') {
-			return _slideDown(target, duration);
-		} else {
-			return _slideUp(target, duration);
-		}
-	}
-}
+// 	target.style.display = display;
+// 	let height = target.offsetHeight;
+// 	target.style.overflow = 'hidden';
+// 	target.style.height = 0;
+// 	target.style.paddingTop = 0;
+// 	target.style.paddingBottom = 0;
+// 	target.style.marginTop = 0;
+// 	target.style.marginBottom = 0;
+// 	target.offsetHeight;
+// 	target.style.transitionProperty = "height, margin, padding";
+// 	target.style.transitionDuration = duration + 'ms';
+// 	target.style.height = height + 'px';
+// 	target.style.removeProperty('padding-top');
+// 	target.style.removeProperty('padding-bottom');
+// 	target.style.removeProperty('margin-top');
+// 	target.style.removeProperty('margin-bottom');
+// 	window.setTimeout(() => {
+// 		target.style.removeProperty('height');
+// 		target.style.removeProperty('overflow');
+// 		target.style.removeProperty('transition-duration');
+// 		target.style.removeProperty('transition-property');
+// 		target.classList.remove('_slide');
+// 	}, duration);
+// }
+// let _slideToggle = (target, duration = 500) => {
+// 	if (!target.classList.contains('_slide')) {
+// 		target.classList.add('_slide');
+// 		if (window.getComputedStyle(target).display === 'none') {
+// 			return _slideDown(target, duration);
+// 		} else {
+// 			return _slideUp(target, duration);
+// 		}
+// 	}
+// }
 //========================================
 //Wrap
 function _wrap(el, wrapper) {

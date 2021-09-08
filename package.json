@@ -1,31 +1,36 @@
 {
-	"name": "fls_start_gulp",
-	"version": "1.0.0",
-	"description": "Start template with Gulp",
-	"author": "FLS",
-	"private": true,
-	"license": "GNU General Public License (GPL)",
-	"devDependencies": {
-		"browser-sync": "latest",
-		"del": "latest",
-		"gulp": "latest",
-		"gulp-autoprefixer": "latest",
-		"gulp-clean-css": "latest",
-		"gulp-file-include": "latest",
-		"gulp-fonter": "latest",
-		"gulp-group-css-media-queries": "latest",
-		"gulp-imagemin": "latest",
-		"gulp-newer": "latest",
-		"gulp-plumber": "latest",
-		"gulp-rename": "latest",
-		"gulp-sass": "latest",
-		"gulp-ttf2woff": "latest",
-		"gulp-ttf2woff2": "latest",
-		"gulp-uglify-es": "latest",
-		"gulp-webp-html": "latest",
-		"gulp-webpcss": "latest",
-		"imagemin-webp": "latest",
-		"transform-runtime": "0.0.0",
-		"webp-converter": "2.2.3"
-	}
+  "name": "fls-gulp",
+  "version": "1.0.0",
+  "description": "gulp",
+  "main": "index.html",
+  "dependencies": {
+    "browser-sync": "^2.27.5"
+  },
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-fonter": "^0.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-ttf2woff": "^1.1.1",
+    "gulp-ttf2woff2": "^4.0.1",
+    "gulp-uglify-es": "^3.0.0",
+    "gulp-webp-html": "^1.0.2",
+    "gulp-webpcss": "^1.1.1",
+    "imagemin-webp": "^6.0.0",
+    "transform-runtime": "0.0.0",
+    "webp-converter": "^2.2.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Flaber",
+  "license": "ISC"
 }

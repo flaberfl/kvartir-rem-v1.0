@@ -21,9 +21,9 @@ const menuFixed = document.querySelector('.header__menu');
 
 const callback = function (enteries, observer) {
   if (enteries[0].isIntersecting) {
-    menuFixed.classList.remove('_scroll');
+    menuFixed.classList.remove('_fixed');
   } else {
-    menuFixed.classList.add('_scroll')
+    menuFixed.classList.add('_fixed');
   }
 };
 

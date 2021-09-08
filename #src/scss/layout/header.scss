@@ -1,4 +1,8 @@
 .header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 
   // .header__top
   &__top {
@@ -71,6 +75,13 @@
     background: #fff;
     border-bottom: 4px solid #e9a617;
     box-shadow: 0 10px 13px 0px rgba(#000, .1);
+
+    &._scroll {
+      position: fixed;
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
   }
 }
 

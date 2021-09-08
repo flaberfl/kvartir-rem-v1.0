@@ -1,3 +1,6 @@
+//================
+// Button UP
+
 window.onscroll = function () {
   var fixedUp = document.getElementById('upbutton');
   if (window.pageYOffset > 600) {
@@ -5,4 +8,27 @@ window.onscroll = function () {
   } else {
     fixedUp.classList.remove('_fixed');
   }
+
+  // var fixedUp = document.querySelector('_upbutton');
 };
+
+//================
+
+// Header
+
+const headerElement = document.querySelector('.header__top');
+const menuFixed = document.querySelector('.header__menu');
+
+const callback = function (enteries, observer) {
+  if (enteries[0].isIntersecting) {
+    menuFixed.classList.remove('_scroll');
+  } else {
+    menuFixed.classList.add('_scroll')
+  }
+};
+
+const headerObserver = new IntersectionObserver(callback);
+headerObserver.observe(headerElement);
+
+
+//===============

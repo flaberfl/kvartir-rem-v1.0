@@ -8,8 +8,6 @@ window.onscroll = function () {
   } else {
     fixedUp.classList.remove('_fixed');
   }
-
-  // var fixedUp = document.querySelector('_upbutton');
 };
 
 //================

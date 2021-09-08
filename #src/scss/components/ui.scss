@@ -68,16 +68,26 @@
 }
 
 #upbutton {
-  background: #f5bc30;
+  // display: none;
   position: fixed;
+  padding: 10px 30px;
   right: 27px;
   bottom: 20px;
-  text-align: center;
-  padding: 10px 30px;
+  
+  background: #f5bc30;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(#000, .2);
+  opacity: 0;
+  
   color: #fff;
-  transition: 0.3s all;
+  text-align: center;
+  
+  transition: opacity .6s;
+  
+  &._fixed {
+    // display: block;
+    opacity: 1;
+  }
 }
 
 

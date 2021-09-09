@@ -77,13 +77,16 @@
     border-bottom: 4px solid #e9a617;
     box-shadow: 0 10px 13px 0px rgba(#000, .1);
 
-    &._fixed {
-      position: fixed;
-      width: 100%;
-      left: 0;
-      top: 0;
-      opacity: .8;
+    @media (min-width:$md3+px) {
+      &._fixed {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        opacity: .8;
+      }
     }
+
   }
 }
 

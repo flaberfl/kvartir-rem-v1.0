@@ -24,7 +24,6 @@
   @media (min-width:$md3+px) {
     display: flex;
     justify-content: space-between;
-    // position: sticky;
   }
 
   li {
@@ -62,6 +61,7 @@
 
 .icon-menu {
   display: none;
+  z-index: 999;
 
   @media (max-width: $md3+px) {
     display: block;

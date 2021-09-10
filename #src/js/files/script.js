@@ -14,8 +14,8 @@ window.onscroll = function () {
 
 // Header
 
-const headerElement = document.querySelector('.header__top');
-const menuFixed = document.querySelector('.header__menu');
+const headerElement = document.querySelector('.header__top'); // Следим за этим блоком
+const menuFixed = document.querySelector('.header__menu'); // К этому блоку примекняем _fixed
 
 const callback = function (enteries, observer) {
   if (enteries[0].isIntersecting) {

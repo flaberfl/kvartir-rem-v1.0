@@ -57,20 +57,12 @@
     @media (max-width:$md2+px) {
       display: none;
     }
-
-    @media (max-width: 540px) {
-      display: block;
-    }
   }
 
   // .header__info
   &__info {
     display: flex;
     align-items: center;
-
-    @media (max-width: 540px) {
-      display: none;
-    }
   }
 
   // .header__btn
@@ -108,6 +100,18 @@
   }
 }
 
+.phones {
+  margin: 0px 0px 0px 55px;
+
+  @media (max-width:$md3+px) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    margin: 2px 0px 0px 0px;
+  }
+}
+
 .phone,
 .mail {
   display: block;
@@ -136,18 +140,6 @@
   }
 }
 
-.phones {
-  margin: 0px 0px 0px 55px;
-
-  @media (max-width:$md3+px) {
-    position: relative;
-    z-index: 10;
-    margin: 2px 0px 0px 0px;
-    display: flex;
-    align-items: center;
-  }
-}
-
 .phone {
   background: url('../../img/i-phone.png') left top no-repeat;
 
@@ -155,11 +147,19 @@
   font-weight: 700;
   color: #262626;
 
+  @media (max-width:540px) {
+    background: none !important;
+  }
+
   &+& {
     margin-top: 12px;
 
     @media (max-width:$md3+px) {
       margin: 0px 0px 0px 30px;
+    }
+
+    @media (max-width:$md3+px) {
+      margin: 0px 0px 0px 10px;
     }
   }
 }

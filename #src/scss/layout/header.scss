@@ -1,9 +1,13 @@
 .header {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 800;
+  position: relative;
+
+  &__wrapper {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 800;
+  }
 
   // .header__top
   &__top {
@@ -15,7 +19,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #fff;
-    // z-index: 3;
 
     @media (max-width:$md3+px) {
       position: fixed;

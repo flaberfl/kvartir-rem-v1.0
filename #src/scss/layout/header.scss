@@ -38,6 +38,10 @@
     @media (max-width:$md2+px) {
       justify-content: center;
     }
+
+    @media (max-width: 490px) {
+      justify-content: flex-start;
+    }
   }
 
   // .header__logo
@@ -151,7 +155,11 @@
   color: #262626;
 
   @media (max-width:540px) {
+    padding: 0;
     background: none !important;
+  }
+  @media (max-width:400px) {
+    font-size: 17px;
   }
 
   &+& {
@@ -161,8 +169,20 @@
       margin: 0px 0px 0px 30px;
     }
 
-    @media (max-width:$md3+px) {
+    @media (max-width:540px) {
+      position: relative;
+      &::before{
+        position: absolute;
+        content:'|';
+        left: -18px;
+
+        
+      }
+    }
+
+    @media (max-width:400px) {
       margin: 0px 0px 0px 10px;
     }
+
   }
 }

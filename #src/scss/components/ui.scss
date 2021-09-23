@@ -77,12 +77,12 @@
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(#000, .2);
   opacity: 0;
-  
+
   color: #fff;
   text-align: center;
-  
+
   transition: opacity .6s;
-  
+
   &._fixed {
     opacity: .8;
   }

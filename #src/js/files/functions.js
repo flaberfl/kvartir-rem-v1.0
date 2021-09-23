@@ -110,6 +110,8 @@ if (iconMenu != null) {
 // 	iconMenu.classList.remove("_active");
 // 	menuBody.classList.remove("_active");
 // }
+
+
 //=================
 //BodyLock
 function body_lock(delay) {

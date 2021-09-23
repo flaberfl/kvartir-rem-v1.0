@@ -14,18 +14,18 @@
     position: relative;
     padding: 20px 0px;
 
-    background-image: url('../../img/header_bg.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #fff;
+    @media (min-width:$md3+px) {
+      background-image: url('../../img/header_bg.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: #fff;
+    }
 
     @media (max-width:$md3+px) {
       position: fixed;
       height: 66px;
       width: 100%;
-
-      background-image: none !important;
     }
   }
 
@@ -53,12 +53,6 @@
       bottom: 0;
       top: 0;
       object-fit: cover;
-
-      @media (max-width:$md3+px) {
-        left: 0;
-        right: 0;
-        margin: auto;
-      }
     }
 
     @media (max-width:$md2+px) {
@@ -74,9 +68,11 @@
 
   // .header__btn
   &__btn {
-    margin: 0px 0px 0px 30px;
+    @media (min-width:$md3+px) {
+      margin: 0px 0px 0px 30px;
 
-    font-size: 18px;
+      font-size: 18px;
+    }
 
     @media (max-width:$md3+px) {
       display: none;
@@ -119,21 +115,6 @@
   }
 }
 
-.phone,
-.mail {
-  display: block;
-  padding-left: 31px;
-
-  transition: all 0.3s ease 0s;
-
-  @media (min-width: 992px) {
-    &:hover {
-      padding: 0px 0px 0px 29px;
-      text-decoration: underline;
-      color: #000;
-    }
-  }
-}
 
 .mail {
   background: url('../../img/i-mail.png') left center no-repeat;
@@ -148,16 +129,18 @@
 }
 
 .phone {
-  background: url('../../img/i-phone.png') left top no-repeat;
-
   font-size: 19px;
   font-weight: 700;
   color: #262626;
 
+  @media (min-width: 540px) {
+    background: url('../../img/i-phone.png') left top no-repeat;
+  }
+
   @media (max-width:540px) {
     padding: 0;
-    background: none !important;
   }
+
   @media (max-width:400px) {
     font-size: 17px;
   }
@@ -171,9 +154,10 @@
 
     @media (max-width:540px) {
       position: relative;
-      &::before{
+
+      &::before {
         position: absolute;
-        content:'|';
+        content: '|';
         left: -18px;
         color: $c_3;
       }
@@ -181,10 +165,26 @@
 
     @media (max-width:400px) {
       margin: 0px 0px 0px 10px;
-      &::before{
+
+      &::before {
         left: -7px;
       }
     }
+  }
+}
 
+.phone,
+.mail {
+  display: block;
+  padding-left: 31px;
+
+  transition: all 0.3s ease 0s;
+
+  @media (min-width: 992px) {
+    &:hover {
+      padding: 0px 0px 0px 29px;
+      text-decoration: underline;
+      color: #000;
+    }
   }
 }

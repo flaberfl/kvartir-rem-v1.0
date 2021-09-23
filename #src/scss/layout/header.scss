@@ -175,13 +175,15 @@
         position: absolute;
         content:'|';
         left: -18px;
-
-        
+        color: $c_3;
       }
     }
 
     @media (max-width:400px) {
       margin: 0px 0px 0px 10px;
+      &::before{
+        left: -7px;
+      }
     }
 
   }

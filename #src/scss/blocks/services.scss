@@ -151,7 +151,7 @@
     color: $c_3;
     border-bottom: 2px dashed $c_3;
 
-    &::before {
+    &:before {
       content: '';
       position: absolute;
       width: 10px;

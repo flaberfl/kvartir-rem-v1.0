@@ -55,19 +55,19 @@
     }
 
     &--flat {
-      background-image: url('../../img/homepage/i-serv-1.jpg');
+      background-image: url('../img/homepage/i-serv-1.jpg');
     }
 
     &--house {
-      background-image: url('../../img/homepage/i-serv-2.jpg');
+      background-image: url('../img/homepage/i-serv-2.jpg');
     }
 
     &--office {
-      background-image: url('../../img/homepage/i-serv-3.jpg');
+      background-image: url('../img/homepage/i-serv-3.jpg');
     }
 
     &--bathroom {
-      background-image: url('../../img/homepage/i-serv-4.jpg');
+      background-image: url('../img/homepage/i-serv-4.jpg');
     }
   }
 
@@ -133,7 +133,7 @@
       left: 0;
       width: 16px;
       height: 16px;
-      background: url('../../img/homepage/list-mark.png') 0 0 no-repeat;
+      background: url('../img/homepage/list-mark.png') 0 0 no-repeat;
     }
 
     @media (max-width:$md3+px) {
@@ -158,7 +158,7 @@
       height: 15px;
       right: -15px;
       bottom: 1px;
-      background: url('../../img/homepage/i-more-arrow.png') 0 0 no-repeat;
+      background: url('../img/homepage/i-more-arrow.png') 0 0 no-repeat;
       transition: all 0.3s ease 0s;
     }
 

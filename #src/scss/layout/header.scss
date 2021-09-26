@@ -17,7 +17,7 @@
     background-color: #fff;
 
     @media (min-width:$md3+px) {
-      background-image: url('../../img/header_bg.jpg');
+      background-image: url('../img/header_bg.jpg');
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -121,7 +121,7 @@
 
 
 .mail {
-  background: url('../../img/i-mail.png') left center no-repeat;
+  background: url('../img/i-mail.png') left center no-repeat;
 
   font-size: 17px;
   line-height: 21px;
@@ -138,7 +138,7 @@
   color: #262626;
 
   @media (min-width: 540px) {
-    background: url('../../img/i-phone.png') left top no-repeat;
+    background: url('../img/i-phone.png') left top no-repeat;
   }
 
   @media (max-width:540px) {

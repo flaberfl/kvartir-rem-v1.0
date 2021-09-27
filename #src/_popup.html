@@ -5,9 +5,9 @@
 			<h3>Обратный звонок</h3>
 			<p>Оставьте свои данные и мы свяжемся с вами</p>
 			<form method="POST" action="../../send-callback.php">
-				<input autocomplete="off" type="text" placeholder="Имя" name="name" required data-error="Не заполнено поле!"
+				<input autocomplete="off" type="text" placeholder="Имя" name="name" data-error="Не заполнено поле!"
 					data-value="" class="input _req">
-				<input autocomplete="off" type="text" placeholder="Телефон" name="phone" required data-error="Не заполнено поле!"
+				<input autocomplete="off" type="text" placeholder="Телефон" name="phone" data-error="Не заполнено поле!"
 					data-value="" class="input _req _phone">
 				<button type="submit" class="form__btn btn">Отправить</button>
 			</form>
@@ -22,11 +22,11 @@
 			<h3>Оставьте отзыв</h3>
 			<p>Нам очень важно Ваше мнение</p>
 			<form method="POST" action="../../send-review.php">
-				<input autocomplete="off" type="text" placeholder="Имя" name="name" required data-error="Не заполнено поле!"
+				<input autocomplete="off" type="text" placeholder="Имя" name="name" data-error="Не заполнено поле!"
 					data-value="" class="input _req">
-				<input autocomplete="off" type="text" placeholder="Телефон" name="phone" required data-error="Не заполнено поле!"
+				<input autocomplete="off" type="text" placeholder="Телефон" name="phone" data-error="Не заполнено поле!"
 					data-value="" class="input _req _phone">
-				<textarea class="textarea _req" name="message" rows="4" data-value="" required data-error="Не заполнено поле!"
+				<textarea class="textarea _req" name="message" rows="4" data-value="" data-error="Не заполнено поле!"
 					placeholder="Отзыв"></textarea>
 				<button type="submit" class="form__btn btn">Отправить</button>
 			</form>

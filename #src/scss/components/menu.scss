@@ -50,6 +50,13 @@
 
   transition: all 0.3s ease 0s;
 
+  @media (min-width:$md3+px) {
+    &._active {
+      background: #e9a617;
+      color: #fff;
+    }
+  }
+
   @media (min-width:$md2+px) {
     &:hover {
       background: #e9a617;

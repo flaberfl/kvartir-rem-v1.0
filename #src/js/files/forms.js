@@ -6,51 +6,51 @@ if (forms.length > 0) {
 		el.addEventListener('submit', form_submit);
 	}
 }
-// async function form_submit(e) {
-// 	let btn = e.target;
-// 	let form = btn.closest('form');
-// 	let error = form_validate(form);
-// 	if (error == 0) {
-// 		let formAction = form.getAttribute('action') ? form.getAttribute('action').trim() : '#';
-// 		let formMethod = form.getAttribute('method') ? form.getAttribute('method').trim() : 'GET';
-// 		const message = form.getAttribute('data-message');
-// 		const ajax = form.getAttribute('data-ajax');
-// 		const test = form.getAttribute('data-test');
+async function form_submit(e) {
+	let btn = e.target;
+	let form = btn.closest('form');
+	let error = form_validate(form);
+	if (error == 0) {
+		let formAction = form.getAttribute('action') ? form.getAttribute('action').trim() : '#';
+		let formMethod = form.getAttribute('method') ? form.getAttribute('method').trim() : 'GET';
+		const message = form.getAttribute('data-message');
+		const ajax = form.getAttribute('data-ajax');
+		const test = form.getAttribute('data-test');
 
-//SendForm
-// if (ajax) {
-// 	e.preventDefault();
-// 	let formData = new FormData(form);
-// 	form.classList.add('_sending');
-// 	let response = await fetch(formAction, {
-// 		method: formMethod,
-// 		body: formData
-// 	});
-// 	if (response.ok) {
-// 		let result = await response.json();
-// 		form.classList.remove('_sending');
-// 		if (message) {
-// 			popup_open(message + '-message');
-// 		}
-// 		form_clean(form);
-// 	} else {
-// 		alert("Ошибка");
-// 		form.classList.remove('_sending');
-// 	}
-// }
-// If test
-if (test) {
-	e.preventDefault();
-	popup_open(message + '-message');
-	form_clean(form);
-}
-} else {
-	let form_error = form.querySelectorAll('._error');
-	if (form_error && form.classList.contains('_goto-error')) {
-		_goto(form_error[0], 1000, 50);
+		SendForm
+		if (ajax) {
+			e.preventDefault();
+			let formData = new FormData(form);
+			form.classList.add('_sending');
+			let response = await fetch(formAction, {
+				method: formMethod,
+				body: formData
+			});
+			if (response.ok) {
+				let result = await response.json();
+				form.classList.remove('_sending');
+				if (message) {
+					popup_open(message + '-message');
+				}
+				form_clean(form);
+			} else {
+				alert("Ошибка");
+				form.classList.remove('_sending');
+			}
+		}
+		// If test
+		if (test) {
+			e.preventDefault();
+			popup_open(message + '-message');
+			form_clean(form);
+		}
+	} else {
+		let form_error = form.querySelectorAll('._error');
+		if (form_error && form.classList.contains('_goto-error')) {
+			_goto(form_error[0], 1000, 50);
+		}
+		e.preventDefault();
 	}
-	e.preventDefault();
-}
 }
 
 function form_validate(form) {

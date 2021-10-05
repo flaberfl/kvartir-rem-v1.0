@@ -1,19 +1,21 @@
 <?php
 // Файлы phpmailer
-require 'phpmailer/PHPMailer.php';
-require 'phpmailer/SMTP.php';
-require 'phpmailer/Exception.php';
+require '../phpmailer/PHPMailer.php';
+require '../phpmailer/SMTP.php';
+require '../phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
 $phone = $_POST['phone'];
+$message = $_POST['message'];
 
 // Формирование самого письма
-$title = "Заявка на обратный звонок";
+$title = "Новая отзыв с сайта";
 $body = "
-<h2>Перезвонить!</h2>
+<h2>Новая отзыв</h2>
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
+<b>Сообщение:</b><br>$message
 ";
 
 // Настройки PHPMailer
@@ -65,4 +67,4 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('Location: /#thanks-callback');
+header('Location: /#thanks-review');

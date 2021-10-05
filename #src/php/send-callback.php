@@ -1,21 +1,19 @@
 <?php
 // Файлы phpmailer
-require 'phpmailer/PHPMailer.php';
-require 'phpmailer/SMTP.php';
-require 'phpmailer/Exception.php';
+require '../phpmailer/PHPMailer.php';
+require '../phpmailer/SMTP.php';
+require '../phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
 $phone = $_POST['phone'];
-$message = $_POST['message'];
 
 // Формирование самого письма
-$title = "Новая заявка с сайта";
+$title = "Заявка на обратный звонок";
 $body = "
-<h2>Новая заявка</h2>
+<h2>Перезвонить!</h2>
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
 ";
 
 // Настройки PHPMailer
@@ -67,4 +65,4 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('Location: portfolio/remont-kvartir/#thanks-callback');
+header('Location: /#thanks-callback');

@@ -1,8 +1,8 @@
 <?php
 // Файлы phpmailer
-require 'phpmailer/PHPMailer.php';
-require 'phpmailer/SMTP.php';
-require 'phpmailer/Exception.php';
+require '../phpmailer/PHPMailer.php';
+require '../phpmailer/SMTP.php';
+require '../phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
@@ -10,9 +10,9 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 
 // Формирование самого письма
-$title = "Новая отзыв с сайта";
+$title = "Новая заявка с сайта";
 $body = "
-<h2>Новая отзыв</h2>
+<h2>Новая заявка</h2>
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message
@@ -67,4 +67,4 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('Location: portfolio/remont-kvartir/#thanks-review');
+header('Location: /#thanks-callback');

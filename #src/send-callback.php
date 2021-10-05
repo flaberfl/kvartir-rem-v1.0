@@ -65,4 +65,4 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('Location: portfolio/remont-kvartir/#thanks-callback');
+header('Location: /#thanks-callback');

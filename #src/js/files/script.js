@@ -31,3 +31,18 @@ headerObserver.observe(headerElement);
 
 
 //===============
+
+
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500, // скорость
+  delay: 100, // задержка перед анимацией
+  // reset: true
+})
+
+sr.reveal('.promo__title', {distance: '120px', origin:'right'})
+sr.reveal('.features__item,.work-plane__list-item', {interval: 100, dilay: 50})
+sr.reveal('.order-form__column--in', {origin:'left'})
+sr.reveal('.order-form__column--txt', {origin:'right'})
+sr.reveal('.contact-info__item', {interval: 100, dilay: 50, origin:'bottom'})
